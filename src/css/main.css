@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body
+{
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: #CB6600;
+}
+
+
+
+

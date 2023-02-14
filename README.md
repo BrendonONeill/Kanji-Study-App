@@ -2,6 +2,31 @@
 This is an app where users can study kanji by selecting their selection of cards that they must try guess the right kanji by speeling out the kanji. 
 This project is a more personal project but also helps me to use typescript and tailwind within a bigger project to help me get a better understanding of them within a production build. 
 
+## Structure
+
+
+--First page--
+
+select the level of kanji you want to test. 
+
+select how many cards you want to test with. 
+
+enter button. 
+
+--Second page--
+
+list of cards with kanji (These cards will have inputs on them that the user can input the name or the kanji in it). 
+
+Cards will turn green if correct and red if incorrect.
+
+--Third Page--
+
+This is have your score and display all the kanji you guessed correctly and incorrectly. 
+
+--Four Page--
+
+This page will display all the kanji in each section. 
+
 ## Tools
 
 React, 

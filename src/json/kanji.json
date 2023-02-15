@@ -1,0 +1,52 @@
+[
+    {
+    "kanji":"大人",
+    "reading": "おとな",
+    "english":"otona"
+    },
+    {
+      "kanji":"一人",
+      "reading": "ひとり",
+      "english":"hitori"
+    },
+    {
+      "kanji":"人工",
+      "reading": "じんこう",
+      "english":"jinkou"
+    },
+    {
+      "kanji":"大きい",
+      "reading": "おおきい",
+      "english":"ookii"
+    },
+    {
+     "kanji":"下",
+     "reading": "した",
+     "english":"shita"
+     },
+     {
+       "kanji":"八",
+       "reading": "はち",
+       "english":"hachi"
+     },
+     {
+       "kanji":"八つ",
+       "reading": "やっつ",
+       "english":"yaatsu"
+     },
+     {
+       "kanji":"入り口",
+       "reading": "いりぐち",
+       "english":"iriguchi"
+     },
+     {
+        "kanji":"大した",
+        "reading": "たいした",
+        "english":"taishita"
+     },
+     {
+        "kanji":"山",
+        "reading": "やま",
+        "english":"yama"
+    }
+]

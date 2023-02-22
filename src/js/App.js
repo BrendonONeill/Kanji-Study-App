@@ -8,7 +8,7 @@ const App = () => {
     useEffect(() => {
         fetch("https://api.jsonbin.io/v3/b/63f62220c0e7653a057c7913", {
             headers: {
-                'X-Access-Key': `${process.env.JSON_API}`
+                'X-Access-Key': `${import.meta.env.VITE_JSON_API_KEY}`
             }
         })
             .then(response => response.json())

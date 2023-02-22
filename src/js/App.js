@@ -6,9 +6,13 @@ import Header from "./Header";
 import Kanji from "./Kanji";
 const App = () => {
     useEffect(() => {
-        fetch("./json/kanji.json")
+        fetch("https://api.jsonbin.io/v3/b/63f62220c0e7653a057c7913", {
+            headers: {
+                'X-Access-Key': `${process.env.JSON_API}`
+            }
+        })
             .then(response => response.json())
-            .then(data => setData(data))
+            .then(data => setData(data.record))
             .catch(error => console.log(error));
     }, []);
     const [data, setData] = useState([]);

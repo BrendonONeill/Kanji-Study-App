@@ -14,7 +14,7 @@ const App = () => {
     const [cardsAmount, setCardsAmount] = useState(0);
     const [finished, setFinished] = useState(false);
     const [number, setNumber] = useState(1);
-    const maxCards = 10; // need to sort
+    const [maxNumber, setMaxNumber] = useState(0);
     useEffect(() => {
         fetch("https://api.jsonbin.io/v3/b/63f62220c0e7653a057c7913", {
             headers: {
@@ -28,8 +28,8 @@ const App = () => {
     const random = (e, kanji, number, pickedNumbers) => {
         debugger;
         e.preventDefault();
-        if (number > maxCards)
-            number = maxCards;
+        if (number > maxNumber)
+            number = maxNumber;
         setGameCards([]);
         let collectionOfCards = [];
         for (let s = 0; s < pickedNumbers.length; s++) {
@@ -53,7 +53,7 @@ const App = () => {
         console.log(score);
         setFinished(true);
     };
-    return (_jsxs(_Fragment, { children: [_jsxs("div", { className: " min-h-[100vh] w-[1600px] m-auto bg-[#FFF5EE]  flex flex-col", children: [_jsx(Header, {}), _jsx(InfoCard, {}), _jsx(CardsSelection, { num: setNumber, random: random, data: data, number: number }), _jsx("div", { className: " w-full p-8 flex flex-row flex-wrap gap-3 flex-row-auto content-start justify-start", children: gameCards.length !== 0 ?
+    return (_jsxs(_Fragment, { children: [_jsxs("div", { className: " min-h-[100vh] w-[1600px] m-auto bg-[#FFF5EE]  flex flex-col", children: [_jsx(Header, {}), _jsx(InfoCard, {}), _jsx(CardsSelection, { num: setNumber, random: random, data: data, number: number, maxNumber: maxNumber, setMaxNumber: setMaxNumber }), _jsx("div", { className: " w-full p-8 flex flex-row flex-wrap gap-3 flex-row-auto content-start justify-start", children: gameCards.length !== 0 ?
                             _jsxs(_Fragment, { children: [_jsx(Kanji, { kanji: gameCards, setScore: setScore }), " "] }) : null }), gameCards.length !== 0 ?
                         _jsx("button", { className: " p-[1rem] bg-[#D66218] rounded-[10px] text-[#fff] font-bold cursor-pointer max-w-[40%] mx-auto mt-2", onClick: () => calculatedScore(), children: "Finished" }) : null, finished ?
                         _jsx(_Fragment, { children: _jsx("div", { className: "mx-auto p-[2rem] text-[2rem] shadow-sm shadow-black my-[2rem] border-[5px] border-[#023E8A] rounded-[10px]", children: _jsxs("h2", { children: [score, "%"] }) }) }) : null, data.length !== 0 ?

@@ -1,8 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { useState } from "react";
-function CardsSelection({ num, random, data, number }) {
+function CardsSelection({ num, random, data, number, maxNumber, setMaxNumber }) {
     let [pickedNumbers, setPickedNumbers] = useState([]);
-    let [maxNumber, setMaxNumber] = useState(0);
     const test = (e, data) => {
         debugger;
         if (e.target.classList.contains("test")) {

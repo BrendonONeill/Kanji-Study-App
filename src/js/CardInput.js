@@ -1,4 +1,4 @@
-export const handleKeyPress = (event, index) => {
+export const handleKeyPress = (event, index, kanji, setScore) => {
     if (event.code === "Enter") {
         let inputWord = event.target.value.trim();
         if (inputWord.toLowerCase() === kanji[index].english || inputWord === kanji[index].reading) {

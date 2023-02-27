@@ -17,7 +17,7 @@ const App = () => {
   const [cardsAmount, setCardsAmount] = useState(0);
   const [finished, setFinished] = useState(false);
   const [number, setNumber] = useState(1);
-  const maxCards = 10; // need to sort
+  const [maxNumber, setMaxNumber] = useState(0);
 
   useEffect(() => {
     fetch("https://api.jsonbin.io/v3/b/63f62220c0e7653a057c7913",{
@@ -34,7 +34,7 @@ const App = () => {
   const random = (e: React.ChangeEvent<HTMLInputElement>,kanji: object[], number: number, pickedNumbers: number[] ) => {
     debugger
     e.preventDefault(); 
-    if(number > maxCards) number = maxCards
+    if(number > maxNumber) number = maxNumber;
     setGameCards([]);
     let collectionOfCards: object[] = []
     for(let s = 0; s < pickedNumbers.length; s++ )
@@ -68,7 +68,7 @@ const App = () => {
       <Header />
       <InfoCard />
       
-      <CardsSelection  num={setNumber} random={random} data={data} number={number} />
+      <CardsSelection  num={setNumber} random={random} data={data} number={number} maxNumber={maxNumber} setMaxNumber={setMaxNumber}/>
       <div className=" w-full p-8 flex flex-row flex-wrap gap-3 flex-row-auto content-start justify-start">
         { gameCards.length !== 0 ? 
           <>

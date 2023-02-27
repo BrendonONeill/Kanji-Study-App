@@ -1,8 +1,8 @@
 
 import React, {useState} from "react";
-function CardsSelection({num, random, data, number}) {
+function CardsSelection({num, random, data, number, maxNumber, setMaxNumber}) {
     let [pickedNumbers, setPickedNumbers] = useState<number[]>([])
-    let [maxNumber, setMaxNumber] = useState(0)
+    
     const test = (e,data) => {
         debugger
         if(e.target.classList.contains("test")){

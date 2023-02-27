@@ -1,4 +1,4 @@
-export const handleKeyPress = (event, index:number)=> {
+export const handleKeyPress = (event, index:number, kanji, setScore)=> {
     if(event.code === "Enter")
     {
       let inputWord = event.target.value.trim();

@@ -41,3 +41,7 @@ I liked how they tested out your hiragana and katakana on this sight and i wante
 On this site I do most my kanji study and wanted a bit different way to study from the usual flash card design. 
 [https://www.wanikani.com/](https://www.wanikani.com/)
 
+## Working on
+Fix responsive design and clean up UI. 
+Add more kani. 
+Clean up each page. 

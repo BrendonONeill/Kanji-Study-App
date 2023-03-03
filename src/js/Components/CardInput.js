@@ -1,7 +1,7 @@
 export const handleKeyPress = (event, index, kanji, setScore) => {
     if (event.code === "Enter") {
         let inputWord = event.target.value.trim();
-        if (inputWord.toLowerCase() === kanji[index].english || inputWord === kanji[index].reading) {
+        if (inputWord.toLowerCase() === kanji[index]?.romaji || kanji[index].onyomi.includes(inputWord) || kanji[index].kunyomi.includes(inputWord)) {
             if (event.target.parentElement.style.backgroundColor === "rgb(138, 1, 1)") {
                 setScore((prev) => prev + 1);
                 event.target.parentElement.style.backgroundColor = "#D4D4D4";

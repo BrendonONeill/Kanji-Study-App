@@ -2,7 +2,7 @@ export const handleKeyPress = (event, index:number, kanji, setScore)=> {
     if(event.code === "Enter")
     {
       let inputWord = event.target.value.trim();
-      if(inputWord.toLowerCase() === kanji[index].english || inputWord === kanji[index].reading)
+      if(inputWord.toLowerCase() === kanji[index]?.romaji || kanji[index].onyomi.includes(inputWord) || kanji[index].kunyomi.includes(inputWord)  )
       {
         if(event.target.parentElement.style.backgroundColor === "rgb(138, 1, 1)")
         {

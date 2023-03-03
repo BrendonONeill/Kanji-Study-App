@@ -13,9 +13,13 @@ function Pages() {
     const [number, setNumber] = useState(1);
     const [maxNumber, setMaxNumber] = useState(0);
     useEffect(() => {
-        fetch("./json/kanji.json")
-            .then(res => res.json())
-            .then(data => setData(data))
+        fetch("https://api.jsonbin.io/v3/b/63f62220c0e7653a057c7913", {
+            headers: {
+                'X-Access-Key': `${import.meta.env.VITE_JSON_API_KEY}`
+            }
+        })
+            .then(response => response.json())
+            .then(data => setData(data.record))
             .catch(error => console.log(error));
     }, []);
     return (_jsx(_Fragment, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Main, { data: data, maxNumber: maxNumber, setGameCards: setGameCards, setCardsAmount: setCardsAmount, number: number, setNumber: setNumber, setMaxNumber: setMaxNumber, gameCards: gameCards }) }), _jsx(Route, { path: "/game", element: _jsx(Game, { setScore: setScore, setFinished: setFinished, cardsAmount: cardsAmount, gameCards: gameCards, score: score }) }), _jsx(Route, { path: "/results", element: _jsx(Results, { score: score, finished: finished }) })] }) }));

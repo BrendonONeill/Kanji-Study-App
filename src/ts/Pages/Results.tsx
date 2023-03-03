@@ -7,7 +7,7 @@ function Results({finished,score} : {finished: boolean, score: number}) {
 
   return (
     <>
-    <div className=" min-h-[95vh] w-[1600px] m-auto bg-[#FFF5EE]  flex flex-col">
+    <div className=" min-h-[95vh] w-[375px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] m-auto bg-[#FFF5EE]  flex flex-col">
     <Header />
     {finished?
       <>

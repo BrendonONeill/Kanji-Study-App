@@ -12,9 +12,10 @@ function CardsSelection(idea) {
     let [pickedNumbers, setPickedNumbers] = useState([]);
     const test = (e, data) => {
         debugger;
+        //Need to look into bug with removing cards as its adding them but not taking away cards
         if (e.target.classList.contains("test")) {
             e.target.classList.remove("test");
-            setPickedNumbers(prevState => (prevState.filter(p => p !== e.target.value)));
+            setPickedNumbers(prev => (prev.filter(p => p !== Number(e.target.value))));
             idea.setMaxNumber(prev => prev - data[0][e.target.value].length);
         }
         else {

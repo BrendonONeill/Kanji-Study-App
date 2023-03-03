@@ -2,56 +2,49 @@
   
   "1":[  
     {
-    "kanji":"大人",
-    "reading": "おとな",
-    "english":"otona"
+    "kanji":"上",
+    "english":"Above",
+    "romaji":"jyou",
+    "onyomi": ["じょう"],
+    "kunyomi": ["うえ", "あ", "のぼ", "うわ", "かみ"]
     },
     {
-      "kanji":"一人",
-      "reading": "ひとり",
-      "english":"hitori"
+      "kanji":"一",
+      "english":"One",
+      "romaji":"ichi",
+      "onyomi": ["いち","いつ"],
+      "kunyomi": ["ひと"]
     },
     {
-      "kanji":"人工",
-      "reading": "じんこう",
-      "english":"jinkou"
-    },
-    {
-      "kanji":"大きい",
-      "reading": "おおきい",
-      "english":"ookii"
-    },
-    {
-     "kanji":"下",
-     "reading": "した",
-     "english":"shita"
-     }
+      "kanji":"七",
+      "english":"Seven",
+      "romaji":"shichi",
+      "onyomi": ["しち"],
+      "kunyomi": ["なな", "なの"]
+    }
     ],
   "2":[
-     {
-       "kanji":"八",
-       "reading": "はち",
-       "english":"hachi"
-     },
-     {
-       "kanji":"八つ",
-       "reading": "やっつ",
-       "english":"yaatsu"
-     },
-     {
-       "kanji":"入り口",
-       "reading": "いりぐち",
-       "english":"iriguchi"
-     },
-     {
-        "kanji":"大した",
-        "reading": "たいした",
-        "english":"taishita"
-     },
-     {
-        "kanji":"山",
-        "reading": "やま",
-        "english":"yama"
-     }
+    {
+      "kanji":"出",
+      "english":"Exit",
+      "romaji":"shutsu",
+      "onyomi": ["しゅつ"],
+      "kunyomi": ["で","だ"]
+      },
+      {
+        "kanji":"千",
+        "english":"Thousand",
+        "romaji":"sen",
+        "onyomi": ["せん"],
+        "kunyomi": ["ち"]
+      },
+      {
+        "kanji":"天",
+        "english":"Heaven",
+        "romaji":"ten",
+        "onyomi": ["てん"],
+        "kunyomi": ["あま"]
+      }
+     
     ]
   }]

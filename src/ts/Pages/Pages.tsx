@@ -15,6 +15,7 @@ function Pages() {
   const [number, setNumber] = useState(1);
   const [maxNumber, setMaxNumber] = useState(0);
 
+  
   useEffect(() => {
     fetch("https://api.jsonbin.io/v3/b/63f62220c0e7653a057c7913",{
      headers:

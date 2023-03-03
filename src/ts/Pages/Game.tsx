@@ -25,7 +25,7 @@ function Game(items: PropTyping) {
 
   return (
     <>
-    <div className=" min-h-[95vh] w-[1600px] m-auto bg-[#FFF5EE]  flex flex-col">
+    <div className=" min-h-[95vh] w-[375px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] m-auto bg-[#FFF5EE]  flex flex-col pb-6">
     <Header />
     <div className=" w-full p-8 flex flex-row flex-wrap gap-3 flex-row-auto content-start justify-start">
         { items.gameCards.length !== 0 ? 

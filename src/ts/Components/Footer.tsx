@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Footer() {
   return (
     <div className='p-[1rem] bg-[#0096C7] text-[#fff] w-[375px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] m-auto rounded-t-md'>

@@ -3,6 +3,8 @@
     "types": ["vite/client"],
     "target": "ES2022",
     "jsx": "react-jsx",
+    "rootDir": "./src",
+    "outDir": "/js",
     "module": "ES2022",
     "moduleResolution": "node",
     "esModuleInterop": true,

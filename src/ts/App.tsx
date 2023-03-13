@@ -1,11 +1,14 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
+import { GlobalProvider } from "./GlobalContext";
 import Pages from "./Pages/Pages";
 const App = () => {
   return (
     <>
     <Router>
+      <GlobalProvider>
       <Pages />
+      </GlobalProvider>
     </Router>
     </>
   );

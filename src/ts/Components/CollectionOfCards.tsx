@@ -1,6 +1,9 @@
 
+import GlobalContext from "../GlobalContext";
+import { useContext } from "react";
 
-function CollectionOfCards({data}) {
+function CollectionOfCards() {
+    const GlobalItems = useContext(GlobalContext);
   return (
     <div className=" bg-blue-300 w-[100%] p-[1rem] flex rounded-[10px] gap-2 flex-col my-[5rem]">
         <div>
@@ -9,7 +12,7 @@ function CollectionOfCards({data}) {
         <div className="flex gap-3 flex-wrap flex-col sm:flex-row items-center p-[1rem]">
         
         {
-            data[0][1].map((d) => (
+            GlobalItems?.data[0][1].map((d) => (
                 <div className=" font-bold p-[2rem] bg-white rounded-[10px] w-[200px] sm:basis-[45%] lg:basis-[24%] ">
                     <p className="p-2 bg-[#0096C7] text-white rounded-md text-center w-[60%] sm:w-[40%] ">{d.kanji}</p>
                     <p>Meaning: {d.english} </p>
@@ -27,7 +30,7 @@ function CollectionOfCards({data}) {
         <div className="flex gap-3 flex-wrap flex-col sm:flex-row items-center p-[1rem]">
         
         {
-            data[0][2].map((d) => (
+            GlobalItems?.data[0][2].map((d) => (
                 <div className=" font-bold p-[2rem] bg-white rounded-[10px] w-[200px] sm:basis-[45%] lg:basis-[24%]">
                     <p className="p-2 bg-[#0096C7] text-white rounded-md text-center w-[60%] sm:w-[40%] ">{d.kanji}</p>
                     <p>Meaning: {d.english} </p>

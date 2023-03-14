@@ -1,16 +1,26 @@
-import { useNavigate } from "react-router-dom";
+
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Kanji from "../Components/Kanji";
 import GlobalContext from "../GlobalContext";
-import { useContext } from "react";
-
+import { useNavigate } from "react-router-dom";
+import { useContext} from "react";
 
 function Game() {
   const GlobalItems = useContext(GlobalContext);
   const navigate = useNavigate();
+
   const calculatedScore = () => {
-    
+    const tempRed: object[] = []
+    GlobalItems?.gameCards.forEach((card) => {
+      const test1 = GlobalItems?.green.find((compareCard) => compareCard.id === card.id);
+      const test2 = GlobalItems?.grey.find((compareCard) => compareCard.id === card.id);
+      if(test1 === undefined && test2 === undefined)
+      {
+        tempRed.push(card)
+      }
+    })
+    GlobalItems?.setRed(prev => [...prev, ...tempRed])
     GlobalItems?.setScore(Math.round((GlobalItems.score / GlobalItems.cardsAmount) * 100))
     console.log(GlobalItems?.score)
     GlobalItems?.setFinished(true);

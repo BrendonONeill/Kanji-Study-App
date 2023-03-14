@@ -2,6 +2,7 @@
   
   "1":[  
     {
+    "id": 1,
     "kanji":"上",
     "english":"Above",
     "romaji":"jyou",
@@ -9,6 +10,7 @@
     "kunyomi": ["うえ", "あ", "のぼ", "うわ", "かみ"]
     },
     {
+      "id": 2,
       "kanji":"一",
       "english":"One",
       "romaji":"ichi",
@@ -16,6 +18,7 @@
       "kunyomi": ["ひと"]
     },
     {
+      "id": 3,
       "kanji":"七",
       "english":"Seven",
       "romaji":"shichi",
@@ -25,6 +28,7 @@
     ],
   "2":[
     {
+      "id": 4,
       "kanji":"出",
       "english":"Exit",
       "romaji":"shutsu",
@@ -32,6 +36,7 @@
       "kunyomi": ["で","だ"]
       },
       {
+        "id": 5,
         "kanji":"千",
         "english":"Thousand",
         "romaji":"sen",
@@ -39,6 +44,7 @@
         "kunyomi": ["ち"]
       },
       {
+        "id": 6,
         "kanji":"天",
         "english":"Heaven",
         "romaji":"ten",

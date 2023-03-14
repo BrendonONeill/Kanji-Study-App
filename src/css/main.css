@@ -14,5 +14,42 @@ body
     background-color: #023E8A;
 }
 
+.switcher-bg
+{
+    border: 2px solid black;
+    animation-duration: 4s;
+}
+
+#light
+{
+    display: flex;
+    position: relative;
+}
+
+#dark
+{
+    display: flex;
+    position: relative;
+}
+
+#div-dark
+{
+    position: absolute;
+    left: 0;
+    background-color: purple;
+}
+
+#div-light
+{
+    position: absolute;
+    left: 16px;
+    background-color: palegreen;
+}
+
+[data-id="nav-dark"] {
+    background-color: black;
+}
+
+
 
 

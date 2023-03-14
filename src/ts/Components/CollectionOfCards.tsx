@@ -13,7 +13,7 @@ function CollectionOfCards() {
         
         {
             GlobalItems?.data[0][1].map((d) => (
-                <div className=" font-bold p-[2rem] bg-white rounded-[10px] w-[200px] sm:basis-[45%] lg:basis-[24%] ">
+                <div key={d.id} className=" font-bold p-[2rem] bg-white rounded-[10px] w-[200px] sm:basis-[45%] lg:basis-[24%] ">
                     <p className="p-2 bg-[#0096C7] text-white rounded-md text-center w-[60%] sm:w-[40%] ">{d.kanji}</p>
                     <p>Meaning: {d.english} </p>
                     <p>Rōmaji: {d.romaji}</p>
@@ -31,7 +31,7 @@ function CollectionOfCards() {
         
         {
             GlobalItems?.data[0][2].map((d) => (
-                <div className=" font-bold p-[2rem] bg-white rounded-[10px] w-[200px] sm:basis-[45%] lg:basis-[24%]">
+                <div key={d.id} className=" font-bold p-[2rem] bg-white rounded-[10px] w-[200px] sm:basis-[45%] lg:basis-[24%]">
                     <p className="p-2 bg-[#0096C7] text-white rounded-md text-center w-[60%] sm:w-[40%] ">{d.kanji}</p>
                     <p>Meaning: {d.english} </p>
                     <p>Rōmaji: {d.romaji}</p>

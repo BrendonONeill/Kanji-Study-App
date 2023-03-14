@@ -1,8 +1,6 @@
 import { ResultType } from "@remix-run/router/dist/utils";
 import { createContext, useState } from "react"
 
-
-
 type GameContext = {
     data: object[];
     setData: React.Dispatch<React.SetStateAction<object[]>>;
@@ -18,10 +16,16 @@ type GameContext = {
     setNumber: React.Dispatch<React.SetStateAction<number>>
     maxNumber: number;
     setMaxNumber: React.Dispatch<React.SetStateAction<number>>
-    resultCards: object[][] 
-    setResultCards: React.Dispatch<React.SetStateAction<object[][]>>
-    
+    green: object[];
+    setGreen: React.Dispatch<React.SetStateAction<object[]>>;
+    grey: object[];
+    setGrey: React.Dispatch<React.SetStateAction<object[]>>;
+    red: object[];
+    setRed: React.Dispatch<React.SetStateAction<object[]>>;
+    theme: string;
+    setTheme: React.Dispatch<React.SetStateAction<string>>
 }
+
 
 const GlobalContext = createContext< null | GameContext >(null)
 
@@ -34,11 +38,14 @@ export function GlobalProvider({ children }:{children :React.ReactNode}) {
     const [finished, setFinished] = useState(false);
     const [number, setNumber] = useState(1);
     const [maxNumber, setMaxNumber] = useState(0);
-    const [resultCards, setResultCards] = useState<object[][]>([]);
+    const [green, setGreen] = useState<object[]>([]);
+    const [grey, setGrey] = useState<object[]>([]);
+    const [red, setRed] = useState<object[]>([]);
+    const [theme, setTheme] = useState("light")
 
     return (
         <GlobalContext.Provider
-          value={{ data, setData, gameCards, setGameCards, score, setScore, cardsAmount, setCardsAmount, finished, setFinished, number, setNumber, maxNumber, setMaxNumber, resultCards, setResultCards}}>
+          value={{ data, setData, gameCards, setGameCards, score, setScore, cardsAmount, setCardsAmount, finished, setFinished, number, setNumber, maxNumber, setMaxNumber, green, setGreen, grey, setGrey, red, setRed, theme, setTheme}}>
           {children}
         </GlobalContext.Provider>
       );

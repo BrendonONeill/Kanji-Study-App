@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import { useNavigate } from "react-router-dom";
 import GlobalContext from "../GlobalContext";
 import { useContext } from "react";
+import ResultCards from "../Components/ResultCards";
 
 
 function Results() {
@@ -17,6 +18,9 @@ function Results() {
     GlobalItems?.setFinished(false)
     GlobalItems?.setNumber(1)
     GlobalItems?.setMaxNumber(0)
+    GlobalItems?.setGreen([])
+    GlobalItems?.setGrey([])
+    GlobalItems?.setRed([])
     navigate(`/`);
   }
 
@@ -31,7 +35,11 @@ function Results() {
       </div>
       </>: null
       }
-      <button className=' p-[1rem] bg-[#D66218] rounded-[10px] text-[#fff] font-bold cursor-pointer max-w-[40%] mx-auto mt-2' onClick={reset} >Try Again</button>
+      <button className=' p-[1rem] bg-[#D66218] rounded-[10px] text-[#fff] font-bold cursor-pointer max-w-[40%] mx-auto mt-2' onClick={reset} >Home</button>
+
+      {GlobalItems?.green.length !== 0 ? <ResultCards card={GlobalItems?.green} text={"First time correct"} style={{backgroundColor: '#018A26', color: 'white'}} />  : null}
+      {GlobalItems?.grey.length !== 0 ?<ResultCards card={GlobalItems?.grey}  text={"Review Again"} style={{backgroundColor:  '#D4D4D4'}} /> : null}
+      {GlobalItems?.red.length !== 0 ?<ResultCards card={GlobalItems?.red}  text={"Don't Know Cards"} style={{backgroundColor:   '#8A0101', color: 'white'}} /> : null}
       </div>
       <Footer />
     </>

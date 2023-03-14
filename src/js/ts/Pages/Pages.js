@@ -18,6 +18,12 @@ function Pages() {
                 .then(response => response.json())
                 .then(data => GlobalItems?.setData(data.record))
                 .catch(error => console.log(error));
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                GlobalItems.setTheme("dark");
+            }
+            else {
+                GlobalItems.setTheme("light");
+            }
         }, []);
     }
     return (_jsx(_Fragment, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Main, {}) }), _jsx(Route, { path: "/game", element: _jsx(Game, {}) }), _jsx(Route, { path: "/results", element: _jsx(Results, {}) })] }) }));

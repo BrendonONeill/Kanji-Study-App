@@ -11,10 +11,12 @@ const Kanji = () => {
                 if (event.target.parentElement.style.backgroundColor === "rgb(138, 1, 1)") {
                     GlobalItems?.setScore((prev) => prev + 1);
                     event.target.parentElement.style.backgroundColor = "#D4D4D4";
+                    GlobalItems?.setGrey(prev => [...prev, ...[GlobalItems.gameCards[index]]]);
                 }
                 else {
                     GlobalItems?.setScore((prev) => prev + 2);
                     event.target.parentElement.style.backgroundColor = "#018A26";
+                    GlobalItems?.setGreen(prev => [...prev, ...[GlobalItems.gameCards[index]]]);
                 }
                 event.target.style.color = "#636363";
                 event.target.style.backgroundColor = "#B0B0B0";

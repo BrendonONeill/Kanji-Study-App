@@ -4,6 +4,7 @@ import { useContext } from "react";
 
 const Kanji = () => {
   const GlobalItems = useContext(GlobalContext);
+  
   const handleKeyPress = (event, index:number)=> {
     if(event.code === "Enter")
     {
@@ -15,11 +16,13 @@ const Kanji = () => {
         {
           GlobalItems?.setScore((prev: number) => prev + 1)
           event.target.parentElement.style.backgroundColor = "#D4D4D4"
+          GlobalItems?.setGrey(prev => [...prev, ...[GlobalItems.gameCards[index]]])
         }
         else
         {
          GlobalItems?.setScore((prev: number) => prev + 2)
           event.target.parentElement.style.backgroundColor = "#018A26"
+          GlobalItems?.setGreen(prev => [...prev, ...[GlobalItems.gameCards[index]]])
         }
         event.target.style.color = "#636363"
         event.target.style.backgroundColor = "#B0B0B0"

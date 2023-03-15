@@ -33,13 +33,15 @@ function Pages() {
 
   
   return (
-    <>
+    <div className={GlobalItems?.theme}>
+    <section className="w-full bg-[#CAF0F8] dark:bg-[#1C1C21]">
     <Routes>
         <Route path="/" element={<Main /> } />
         <Route path="/game" element={<Game />} />
         <Route path="/results" element={<Results />} />
     </Routes>
-    </>
+    </section>
+    </div>
   )
 }
 

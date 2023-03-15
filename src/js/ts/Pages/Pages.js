@@ -1,4 +1,4 @@
-import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Route, Routes } from "react-router-dom";
 import Main from "./Main";
 import Game from "./Game";
@@ -26,6 +26,6 @@ function Pages() {
             }
         }, []);
     }
-    return (_jsx(_Fragment, { children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Main, {}) }), _jsx(Route, { path: "/game", element: _jsx(Game, {}) }), _jsx(Route, { path: "/results", element: _jsx(Results, {}) })] }) }));
+    return (_jsx("div", { className: GlobalItems?.theme, children: _jsx("section", { className: "w-full bg-[#CAF0F8] dark:bg-[#1C1C21]", children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Main, {}) }), _jsx(Route, { path: "/game", element: _jsx(Game, {}) }), _jsx(Route, { path: "/results", element: _jsx(Results, {}) })] }) }) }));
 }
 export default Pages;

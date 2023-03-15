@@ -6,17 +6,21 @@
 body
 {
     font-family: 'M PLUS 1p', sans-serif;
-    background-color: #CAF0F8;
 }
 
-.test
+
+.button-clicked-light
 {
-    background-color: #023E8A;
+    background-color: #c55907;
+}
+
+.button-clicked-dark
+{
+    background-color: #c55907;
 }
 
 .switcher-bg
 {
-    border: 2px solid black;
     animation-duration: 4s;
 }
 
@@ -36,14 +40,14 @@ body
 {
     position: absolute;
     left: 0;
-    background-color: purple;
+    background-color: #0BB744;
 }
 
 #div-light
 {
     position: absolute;
-    left: 16px;
-    background-color: palegreen;
+    left: 18px;
+    background-color: #FF7900;
 }
 
 [data-id="nav-dark"] {

@@ -13,7 +13,6 @@ function CardsSelection() {
         }
     }, [GlobalItems?.gameCards]);
     const random = (e, pickedNumbers) => {
-        debugger;
         e.preventDefault();
         if (GlobalItems !== null) {
             let cardsNumber = 0;
@@ -44,22 +43,19 @@ function CardsSelection() {
     };
     let [pickedNumbers, setPickedNumbers] = useState([]);
     const test = (e) => {
-        debugger;
         let eventValue = e.target.value;
-        //Need to look into bug with removing cards as its adding them but not taking away cards
-        if (e.target.classList.contains("test")) {
-            e.target.classList.remove("test");
+        if (e.target.classList.contains(`button-clicked-${GlobalItems?.theme}`)) {
+            e.target.classList.remove(`button-clicked-${GlobalItems?.theme}`);
             setPickedNumbers(prev => (prev.filter(p => p !== Number(e.target.value))));
             GlobalItems?.setMaxNumber(prev => prev - GlobalItems.data[0][eventValue].length);
         }
         else {
-            e.target.classList.add("test");
+            e.target.classList.add(`button-clicked-${GlobalItems?.theme}`);
             setPickedNumbers(prev => [...prev, Number(e.target.value)]);
             GlobalItems?.setMaxNumber(prev => prev + GlobalItems.data[0][eventValue].length);
-            console.log("This is the pickedNumbers: " + pickedNumbers);
         }
     };
-    return (_jsxs("div", { children: [_jsxs("div", { className: " p-[2rem] flex gap-[1rem] justify-center", children: [_jsx("button", { value: 1, className: "p-[1.5rem] bg-[#0096C7] rounded-[10px] text-[white] font-bold", onClick: (event) => test(event), children: "1" }), _jsx("button", { value: 2, className: "p-[1.5rem] bg-[#0096C7] rounded-[10px] text-[white] font-bold", onClick: (event) => test(event), children: "2" })] }), _jsxs("form", { className: "max-w-[40%] mx-auto mt-2 p-[1rem] flex justify-center items-center", onSubmit: (e) => random(e, pickedNumbers), children: [_jsx("input", { className: " border-[4px] rounded-[10px] border-[#023E8A] mx-[5px] w-[200px] p-[0.5rem]", type: "number", id: "number", placeholder: "1", min: 1, onChange: (e) => GlobalItems?.setNumber(Number(e.target.value)) }), _jsxs("p", { className: " p-[1rem]", children: ["(Max ", GlobalItems?.maxNumber, ")"] }), GlobalItems?.maxNumber !== 0 ?
-                        _jsx("button", { type: "submit", className: " p-[1rem] bg-[#D66218] text-[#fff] font-bold rounded-[10px] cursor-pointer ", children: "Generate Cards" }) : null] })] }));
+    return (_jsxs("div", { children: [_jsxs("div", { className: " p-[2rem] flex gap-[1rem] justify-center", children: [_jsx("button", { value: 1, className: "p-[1.5rem] bg-[#FF7900] rounded-[10px] text-[#000] font-bold", onClick: (event) => test(event), children: "1" }), _jsx("button", { value: 2, className: "p-[1.5rem] bg-[#FF7900] rounded-[10px] text-[#000] font-bold", onClick: (event) => test(event), children: "2" })] }), _jsxs("form", { className: "max-w-[80%] md:max-w-[40%] mx-auto mt-2 p-[1rem] flex md:flex-row flex-col justify-center items-center", onSubmit: (e) => random(e, pickedNumbers), children: [_jsx("input", { className: " border-[4px] rounded-[10px] border-[#023E8A] dark:border-[#0BB744] mx-[5px] w-[200px] p-[0.5rem]", type: "number", id: "number", placeholder: "1", min: 1, onChange: (e) => GlobalItems?.setNumber(Number(e.target.value)) }), _jsxs("p", { className: " p-[1rem] dark:text-white", children: ["(Max ", GlobalItems?.maxNumber, ")"] }), GlobalItems?.maxNumber !== 0 ?
+                        _jsx("button", { type: "submit", className: " p-[1rem] bg-[#FF7900] text-[#000] font-bold rounded-[10px] cursor-pointer ", children: "Generate Cards" }) : null] })] }));
 }
 export default CardsSelection;

@@ -2,9 +2,10 @@ import { jsx as _jsx, Fragment as _Fragment } from "react/jsx-runtime";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
 import { GlobalProvider } from "./GlobalContext";
+import { ThemeProvider } from "./ThemeContext";
 import Pages from "./Pages/Pages";
 const App = () => {
-    return (_jsx(_Fragment, { children: _jsx(Router, { children: _jsx(GlobalProvider, { children: _jsx(Pages, {}) }) }) }));
+    return (_jsx(_Fragment, { children: _jsx(Router, { children: _jsx(GlobalProvider, { children: _jsx(ThemeProvider, { children: _jsx(Pages, {}) }) }) }) }));
 };
 const container = document.getElementById("root");
 console.log(container);

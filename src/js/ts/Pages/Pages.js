@@ -11,9 +11,14 @@ function Pages() {
     const GlobalItems = useContext(GlobalContext);
     if (GlobalItems?.data.length === 0) {
         useEffect(() => {
-            fetch("./json/kanji.json")
-                .then(res => res.json())
-                .then(data => GlobalItems?.setData(data))
+            fetch("https://api.jsonbin.io/v3/b/63f62220c0e7653a057c7913",{
+                headers:
+                {
+                  'X-Access-Key' : `${import.meta.env.VITE_JSON_API_KEY}`
+                }
+               })
+                .then(response => response.json())
+                .then(data => GlobalItems?.setData(data.record))
                 .catch(error => console.log(error));
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 GlobalItems.setTheme("dark");

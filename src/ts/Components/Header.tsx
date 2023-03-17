@@ -20,7 +20,7 @@ function Header() {
   return (
     <nav className=' p-[1rem] text-center bg-[#0096C7] dark:bg-[#5A189A] text-[#fff] rounded-b-md flex' data-id={`nav-${GlobalItems?.theme}`}>
         <div className='basis-[70%] sm:basis-[85%] md:basis-[95%] flex items-center'>
-        <h1 className=' font-bold text-[1rem] flex items-center'><a href="https://kanji-study.onrender.com/">Kanji APP</a></h1>
+        <h1 className=' font-bold text-[1rem] flex items-center'><a href="https://kanji-study.onrender.com/"><img className=" w-[160px]" src={'./images/kanjiApp.svg'} alt="" /></a></h1>
         </div>
         
         <div className="flex justify-center min-h-[60px] basis-[30%] sm:basis-[20%] md:basis-[10%]   items-center gap-2">

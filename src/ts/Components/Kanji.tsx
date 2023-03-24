@@ -6,7 +6,7 @@ const Kanji = () => {
   const GlobalItems = useContext(GlobalContext);
   
   const handleKeyPress = (event, index:number)=> {
-    if(event.code === "Enter")
+    if(event.key === "Enter")
     {
       let inputWord = event.target.value.trim();
       let test = inputWord.toLowerCase();
@@ -44,7 +44,7 @@ const Kanji = () => {
       <div className=" basis-[70%] mb-4 flex justify-center items-center bg-white dark:bg-[#1C1C21] dark:text-white rounded-md">
         <h1 className=" w-full text-[1.5rem] font-bold">{word.kanji}</h1>
       </div>
-      <input  className=" w-full  bg-[#d6d6d6] dark:bg-[#4C4D52] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]" type="text" key={index} onKeyDown={(e) => handleKeyPress(e, index)} />
+      <input  className=" w-full  bg-[#d6d6d6] hover:bg-[#bdbdbd] dark:bg-[#4C4D52] dark:hover:bg-[#333438] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]" type="text" key={index} onKeyDown={(e) => handleKeyPress(e, index)} />
     </div>
     </>
   ));

@@ -8,7 +8,6 @@ function CardsSelection() {
     const GlobalItems = useContext(GlobalContext);
     useEffect(() => {
         if (GlobalItems?.gameCards.length !== 0) {
-            console.log("it works");
             navigate(`/game`);
         }
     }, [GlobalItems?.gameCards]);
@@ -34,7 +33,6 @@ function CardsSelection() {
             for (let i = 0; i < cardsNumber; i++) {
                 let sortSize = sortKanji.length;
                 let pick = Math.floor(Math.random() * sortSize);
-                console.log(pick + ": This is your pick");
                 sortedCards.push(sortKanji[pick]);
                 sortKanji.splice(pick, 1);
             }
@@ -42,7 +40,7 @@ function CardsSelection() {
         }
     };
     let [pickedNumbers, setPickedNumbers] = useState([]);
-    const test = (e) => {
+    const addCardsToDeck = (e) => {
         let eventValue = e.target.value;
         if (e.target.classList.contains(`button-clicked-${GlobalItems?.theme}`)) {
             e.target.classList.remove(`button-clicked-${GlobalItems?.theme}`);
@@ -55,7 +53,7 @@ function CardsSelection() {
             GlobalItems?.setMaxNumber(prev => prev + GlobalItems.data[0][eventValue].length);
         }
     };
-    return (_jsxs("div", { children: [_jsxs("div", { className: " p-[2rem] flex gap-[1rem] justify-center", children: [_jsx("button", { value: 1, className: "p-[1.5rem] bg-[#FF7900] rounded-[10px] text-[#000] font-bold", onClick: (event) => test(event), children: "1" }), _jsx("button", { value: 2, className: "p-[1.5rem] bg-[#FF7900] rounded-[10px] text-[#000] font-bold", onClick: (event) => test(event), children: "2" })] }), _jsxs("form", { className: "max-w-[80%] md:max-w-[40%] mx-auto mt-2 p-[1rem] flex md:flex-row flex-col justify-center items-center", onSubmit: (e) => random(e, pickedNumbers), children: [_jsx("input", { className: " border-[4px] rounded-[10px] border-[#023E8A] dark:border-[#0BB744] mx-[5px] w-[200px] p-[0.5rem]", type: "number", id: "number", placeholder: "1", min: 1, onChange: (e) => GlobalItems?.setNumber(Number(e.target.value)) }), _jsxs("p", { className: " p-[1rem] dark:text-white", children: ["(Max ", GlobalItems?.maxNumber, ")"] }), GlobalItems?.maxNumber !== 0 ?
-                        _jsx("button", { type: "submit", className: " p-[1rem] bg-[#FF7900] text-[#000] font-bold rounded-[10px] cursor-pointer ", children: "Generate Cards" }) : null] })] }));
+    return (_jsxs("div", { className: " pb-[5rem]", children: [_jsxs("div", { className: " p-[2rem] flex gap-[1rem] justify-center", children: [_jsx("button", { value: 1, className: "p-[1.5rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[10px] text-[#000] font-bold", onClick: (event) => addCardsToDeck(event), children: "1" }), _jsx("button", { value: 2, className: "p-[1.5rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[10px] text-[#000] font-bold", onClick: (event) => addCardsToDeck(event), children: "2" })] }), _jsxs("form", { className: "max-w-[80%] md:max-w-[60%] lg:max-w-[40%] mx-auto mt-2 p-[1rem] flex md:flex-row flex-col justify-center items-center", onSubmit: (e) => random(e, pickedNumbers), children: [_jsx("input", { className: " border-[4px] rounded-[10px] border-[#023E8A] dark:border-[#0BB744] mx-[5px] w-[200px] p-[0.5rem]", type: "number", id: "number", placeholder: "1", min: 1, onChange: (e) => GlobalItems?.setNumber(Number(e.target.value)) }), _jsxs("p", { className: " p-[1rem] dark:text-white", children: ["(Max ", GlobalItems?.maxNumber, ")"] }), GlobalItems?.maxNumber !== 0 ?
+                        _jsx("button", { type: "submit", className: " p-[1rem] bg-[#FF7900] hover:bg-[#b35500] text-[#000] font-bold rounded-[10px] cursor-pointer ", children: "Start Game" }) : null] })] }));
 }
 export default CardsSelection;

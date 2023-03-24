@@ -47,7 +47,7 @@ function Game() {
         }
       </div>
       { GlobalItems?.gameCards.length !== 0 ?
-      <button className=" p-[1rem] bg-[#FF7900] text-black rounded-[10px] font-bold cursor-pointer max-w-[40%] mx-auto mt-2" onClick={() => calculatedScore()}>Finished</button>  :null}
+      <button aria-label="finished the game" className=" p-[1rem] bg-[#FF7900] hover:bg-[#b35500] text-black rounded-[10px] font-bold cursor-pointer max-w-[40%] mx-auto mt-2" onClick={() => calculatedScore()}>Finished</button>  :null}
     </div>
     <Footer/>
     </>

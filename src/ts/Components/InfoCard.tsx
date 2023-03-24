@@ -1,15 +1,17 @@
 function InfoCard() {
   return (
-    <div className="p-[1rem] border-[5px] border-[#023E8A] dark:text-[white] dark:border-[#0BB744] rounded-[10px]">
-        <p className="text-[1.4rem]">This is the second draft of my kanji learning website. It still has many bugs but will be fixed later.</p>
+    <div className=" m-[0] md:m-[2rem]  p-[1rem] border-[5px] border-[#023E8A] dark:text-[white] dark:border-[#0BB744] rounded-[10px]">
+        <p className="p-[1rem] bg-[#023E8A] dark:bg-[#7824BC] text-white rounded-[10PX] text-center font-bold text-[1.4rem] mb-[0.8rem]">How to Play</p>
         <ol>
-          <li>The user will select which decks they want to test with and input the amount of cards they want to test.</li>
-          <li>The user will import their answers into the cards and try to quess the above kanji.</li>
-          <li>If the user correctly inputs the answer the card will turn green, if not the card wikk turn red and give the user another try.</li>
-          <li>The card will turn grey if the user gets the answer if the card is red.</li>
-          <li>Once the user is finished they will press the finished button and they will be given a score.</li>
+          <li>first select which decks you would like to use within the game by selecting a number button.</li>
+          <li>(If you would like to preview the decks select the preview decks button).</li>
+          <li>Then input the amount of cards you would like to study from the random cards selected from the decks you have picked.</li>
+          <li>To start the game click on the start game button.</li>
+          <li>Cards will be gnerated on the page with kanji on top and an input on the bottom.</li>
+          <li>Input your anwsers into the input boxes using Romaji, Kun'yomi or On'yomi (colour change explained below)</li>
+          <li>Once you are happy with your answers select the finished button when you will see your percentage and collection of cards.</li>
         </ol>
-        <p className="bg-[#023E8A] dark:bg-[#7824BC] text-white rounded-[10px] border-[3px] p-[0.5rem] mt-2">The score is caluclated by the coloured cards, green (If you do get the answer correct first try) is 2 marks grey (If you dont get the answer first try) is 1 mark and red or blue is 0 marks.</p>
+        <p className="bg-[#023E8A] dark:bg-[#7824BC] text-white rounded-[10px] p-[1rem] mt-2"> When playing the game you might notice the cards have changed colour when inputing answers this is part of the scoring system. Each card is worth 2 points if you get the answer correct first try you get 2 points represented by green. If you make a mistake and then get the answer correct you get a grey card and 1 point, but if you dont answer or dont fill in a card this is worth 0 points.</p>
       </div>
   )
 }

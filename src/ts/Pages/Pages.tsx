@@ -6,6 +6,7 @@ import {useEffect} from "react";
 import GlobalContext from "../GlobalContext";
 import { useContext } from "react";
 import NotFound from "./NotFound";
+import CardsPage from "./CardsPage";
 
 function Pages() {
   const GlobalItems = useContext(GlobalContext);
@@ -39,6 +40,7 @@ function Pages() {
         <Route path="/" element={<Main /> } />
         <Route path="/game" element={<Game />} />
         <Route path="/results" element={<Results />} />
+        <Route path="/cards" element={<CardsPage />} />
         <Route path="*" element={<NotFound />} />
     </Routes>
     </section>

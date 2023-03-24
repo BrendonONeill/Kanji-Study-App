@@ -6,8 +6,8 @@ function Footer() {
       </div>
         <div className='p-[0.2rem] basis-[50%] sm:basis-[20%] md:basis-[10%] h-full'>
           <ul className='flex list-none'>
-            <li className='basis-[50%] p-2'><a href="https://github.com/BrendonONeill/Kanji-Study-App" target="_blank"><img  width={"30px"} height={"30px"} src={"../images/github.svg"} alt="" /></a></li>
-            <li className='basis-[50%] p-2'><a href="https://brendononeill.github.io/Portfolio-Revamp/" target="_blank" rel="noopener noreferrer"><img width={"30px"} height={"30px"} src={"../images/folder.svg"} alt="" /></a></li>
+            <li className='basis-[50%] p-2'><a aria-label="check out my github code for this project" href="https://github.com/BrendonONeill/Kanji-Study-App" target="_blank"><img  width={"30px"} height={"30px"} src={"../images/github.svg"} alt="" /></a></li>
+            <li className='basis-[50%] p-2'><a aria-label="check out my portfolio for more projects" href="https://brendononeill.github.io/Portfolio-Revamp/" target="_blank" rel="noopener noreferrer"><img width={"30px"} height={"30px"} src={"../images/folder.svg"} alt="" /></a></li>
           </ul>
         </div>
     </div>

@@ -11,7 +11,7 @@ function CardsSelection() {
   useEffect(() => {
       if(GlobalItems?.gameCards.length !== 0)
       {
-        console.log("it works")
+       
         navigate(`/game`);
       }  
   },[GlobalItems?.gameCards])
@@ -43,7 +43,7 @@ function CardsSelection() {
       {
       let sortSize: number = sortKanji.length;
       let pick = Math.floor(Math.random() * sortSize);
-      console.log(pick + ": This is your pick")
+      
       sortedCards.push(sortKanji[pick])
       sortKanji.splice(pick,1)
       }
@@ -54,7 +54,7 @@ function CardsSelection() {
 
     let [pickedNumbers, setPickedNumbers] = useState<number[]>([])
     
-    const test = (e) => {
+    const addCardsToDeck = (e) => {
         let eventValue: number = e.target.value;
         if(e.target.classList.contains(`button-clicked-${GlobalItems?.theme}`)){
             e.target.classList.remove(`button-clicked-${GlobalItems?.theme}`)
@@ -67,18 +67,18 @@ function CardsSelection() {
     }
 
   return (
-    <div>
+    <div className=" pb-[5rem]">
         <div className=" p-[2rem] flex gap-[1rem] justify-center">
-            <button value={1} className="p-[1.5rem] bg-[#FF7900] rounded-[10px] text-[#000] font-bold" onClick={(event) => test(event)}>1</button>
-            <button value={2} className="p-[1.5rem] bg-[#FF7900] rounded-[10px] text-[#000] font-bold" onClick={(event) => test(event)}>2</button>
+            <button value={1} className="p-[1.5rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[10px] text-[#000] font-bold" onClick={(event) => addCardsToDeck(event)}>1</button>
+            <button value={2} className="p-[1.5rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[10px] text-[#000] font-bold" onClick={(event) => addCardsToDeck(event)}>2</button>
         </div>
     
-        <form className="max-w-[80%] md:max-w-[40%] mx-auto mt-2 p-[1rem] flex md:flex-row flex-col justify-center items-center" onSubmit={(e) => random( e, pickedNumbers)}>
+        <form className="max-w-[80%] md:max-w-[60%] lg:max-w-[40%] mx-auto mt-2 p-[1rem] flex md:flex-row flex-col justify-center items-center" onSubmit={(e) => random( e, pickedNumbers)}>
        
       <input className=" border-[4px] rounded-[10px] border-[#023E8A] dark:border-[#0BB744] mx-[5px] w-[200px] p-[0.5rem]" type="number" id="number" placeholder="1" min={1} onChange={(e) => GlobalItems?.setNumber(Number(e.target.value))}  />
       <p className=" p-[1rem] dark:text-white">(Max {GlobalItems?.maxNumber})</p>
       { GlobalItems?.maxNumber !== 0 ? 
-      <button type="submit" className=" p-[1rem] bg-[#FF7900] text-[#000] font-bold rounded-[10px] cursor-pointer ">Generate Cards</button>: null
+      <button type="submit" className=" p-[1rem] bg-[#FF7900] hover:bg-[#b35500] text-[#000] font-bold rounded-[10px] cursor-pointer ">Start Game</button>: null
     }
       </form>
     </div>

@@ -1,5 +1,5 @@
 # Kanji-Study-App
-This is an app where users can study kanji by selecting their selection of cards that they must try guess the right kanji by speeling out the kanji. 
+This is an app where users can study kanji by selecting their selection of cards that they must try guess the right kanji by spelling out the kanji. 
 This project is a more personal project but also helps me to use typescript and tailwind within a bigger project to help me get a better understanding of them within a production build. 
 
 ## Structure

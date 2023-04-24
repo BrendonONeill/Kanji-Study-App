@@ -14,7 +14,7 @@ function Pages() {
   if(GlobalItems?.data.length === 0)
   {
     useEffect(() => {
-    fetch(`https://concerned-shirt-dog.cyclic.app/`)
+    fetch(`https://concerned-shirt-dog.cyclic.app/kanji/`)
     .then(response => response.json())
     .then(data => GlobalItems?.setData(data.record))
     .catch(error => console.log(error));

@@ -4,7 +4,7 @@ import { useContext } from "react";
 const Kanji = () => {
     const GlobalItems = useContext(GlobalContext);
     const handleKeyPress = (event, index) => {
-        if (event.key === "Enter") {
+        if (event.which === 13) {
             let inputWord = event.target.value.trim();
             let test = inputWord.toLowerCase();
             if (GlobalItems?.gameCards[index].romaji.includes(test) || GlobalItems?.gameCards[index].onyomi.includes(test) || GlobalItems?.gameCards[index].kunyomi.includes(test)) {

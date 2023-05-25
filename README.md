@@ -86,5 +86,3 @@ On this site I do most my kanji study and wanted a bit different way to study fr
 
 ## Known Bugs
 * Deck selecting clashing with dark mode sometimes
-
-* bug where word check on phone doesn't call

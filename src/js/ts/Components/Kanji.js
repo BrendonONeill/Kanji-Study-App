@@ -3,8 +3,7 @@ import GlobalContext from "../GlobalContext";
 import { useContext } from "react";
 const Kanji = () => {
     const GlobalItems = useContext(GlobalContext);
-    const handleKeyPress = (event, index) => {
-        if (event.which === 13 || event.which === 9 || event.which === 229) {
+    const handleKeyPress = (index) => {
             let inputWord = event.target.value.trim();
             let test = inputWord.toLowerCase();
             if (GlobalItems?.gameCards[index].romaji.includes(test) || GlobalItems?.gameCards[index].onyomi.includes(test) || GlobalItems?.gameCards[index].kunyomi.includes(test)) {
@@ -26,8 +25,7 @@ const Kanji = () => {
                 event.target.parentElement.style.backgroundColor = "rgb(239,35,60)";
                 event.target.parentElement.classList.add('wrong');
             }
-        }
     };
-    return GlobalItems?.gameCards.map((word, index) => (_jsx(_Fragment, { children: _jsxs("div", { className: " mb-3 w-[220px] h-[180px] rounded-xl flex flex-col bg-[#4361ee] p-4 text-center basis-[45%] sm:basis-[30%] lg:basis-[24%] xl:basis-[18%]", children: [_jsx("div", { className: " basis-[70%] mb-4 flex justify-center items-center bg-white dark:bg-[#1C1C21] dark:text-white rounded-md", children: _jsx("h1", { className: " w-full text-[1.5rem] font-bold", children: word.kanji }) }), _jsx("input", { className: " w-full  bg-[#d6d6d6] hover:bg-[#bdbdbd] dark:bg-[#4C4D52] dark:hover:bg-[#333438] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]", type: "text", onKeyDown: (e) => handleKeyPress(e, index) }, index)] }, index) })));
+    return GlobalItems?.gameCards.map((word, index) => (_jsx(_Fragment, { children: _jsxs("div", { className: " mb-3 w-[220px] h-[180px] rounded-xl flex flex-col bg-[#4361ee] p-4 text-center basis-[45%] sm:basis-[30%] lg:basis-[24%] xl:basis-[18%]", children: [_jsx("div", { className: " basis-[70%] mb-4 flex justify-center items-center bg-white dark:bg-[#1C1C21] dark:text-white rounded-md", children: _jsx("h1", { className: " w-full text-[1.5rem] font-bold", children: word.kanji }) }), _jsx("input", { className: " w-full  bg-[#d6d6d6] hover:bg-[#bdbdbd] dark:bg-[#4C4D52] dark:hover:bg-[#333438] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]", type: "text", onBlur: handleKeyPress(index) }, index)] }, index) })));
 };
 export default Kanji;

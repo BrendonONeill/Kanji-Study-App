@@ -7,7 +7,7 @@ function InfoCard() {
           <li>(If you would like to preview the decks select the preview decks button).</li>
           <li>Then input the amount of cards you would like to study from the random cards selected from the decks you have picked.</li>
           <li>To start the game click on the start game button.</li>
-          <li>Cards will be genrated on the page with kanji on top and an input on the bottom.</li>
+          <li>Cards will be generated on the page with kanji on top and an input on the bottom.</li>
           <li>Input your anwsers into the input boxes using Romaji, Kun'yomi or On'yomi (colour change explained below)</li>
           <li>Once you are happy with your answers select the finished button when you will see your percentage and collection of cards.</li>
         </ol>

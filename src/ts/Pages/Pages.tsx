@@ -8,8 +8,6 @@ import { useContext } from "react";
 import NotFound from "./NotFound";
 import CardsPage from "./CardsPage";
 
-
-
 function Pages() {
   const GlobalItems = useContext(GlobalContext);
 
@@ -26,7 +24,9 @@ function Pages() {
         GlobalItems.setTheme("light")
       }
     }, [])
+
   }
+
 
 
 

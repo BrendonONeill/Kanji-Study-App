@@ -28,11 +28,11 @@ const Kanji = () => {
       event.target.parentElement.classList.add('wrong');
     }
   }
-
+  debugger
   return GlobalItems?.gameCards.map((word, index: number) => (
     <>
       <div
-        key={index}
+        key={word.id}
         className=" mb-3 w-[220px] h-[180px] rounded-xl flex flex-col bg-[#4361ee] p-4 text-center basis-[45%] sm:basis-[30%] lg:basis-[24%] xl:basis-[18%]">
         <div className=" basis-[70%] mb-4 flex justify-center items-center bg-white dark:bg-[#1C1C21] dark:text-white rounded-md">
           <h1 className=" w-full text-[1.5rem] font-bold">{word.kanji}</h1>

@@ -1,216 +1,413 @@
-[{
-  
-  "1":[
+[
+  {
+    "1": [
       {
         "id": 1,
-        "kanji":"一",
-        "english":"One",
-        "romaji":["ichi","itsu", "hito"],
-        "onyomi": ["いち","いつ"],
-        "kunyomi": ["ひと"]
+        "kanji": "一",
+        "english": "One",
+        "romaji": [
+          "ichi",
+          "itsu",
+          "hito"
+        ],
+        "onyomi": [
+          "いち",
+          "いつ"
+        ],
+        "kunyomi": [
+          "ひと"
+        ]
       },
       {
         "id": 2,
-        "kanji":"七",
-        "english":"Seven",
-        "romaji":["shichi", "nana"],
-        "onyomi": ["しち"],
-        "kunyomi": ["なな", "なの"]
+        "kanji": "七",
+        "english": "Seven",
+        "romaji": [
+          "shichi",
+          "nana"
+        ],
+        "onyomi": [
+          "しち"
+        ],
+        "kunyomi": [
+          "なな",
+          "なの"
+        ]
       },
       {
         "id": 3,
-        "kanji":"三",
-        "english":"Three",
-        "romaji":["san","mi"],
-        "onyomi": ["さん","mi"],
-        "kunyomi": ["み"]
+        "kanji": "三",
+        "english": "Three",
+        "romaji": [
+          "san",
+          "mi"
+        ],
+        "onyomi": [
+          "さん",
+          "mi"
+        ],
+        "kunyomi": [
+          "み"
+        ]
       },
       {
-      "id": 4,
-      "kanji":"上",
-      "english":"Above",
-      "romaji":["jyou", "ue"],
-      "onyomi": ["じょう"],
-      "kunyomi": ["うえ", "あ", "のぼ", "うわ", "かみ"]
+        "id": 4,
+        "kanji": "上",
+        "english": "Above",
+        "romaji": [
+          "jyou",
+          "ue"
+        ],
+        "onyomi": [
+          "じょう"
+        ],
+        "kunyomi": [
+          "うえ",
+          "あ",
+          "のぼ",
+          "うわ",
+          "かみ"
+        ]
       },
       {
-      "id": 5,
-      "kanji":"下",
-      "english":"Below",
-      "romaji":["jyou", "ue"],
-      "onyomi": ["ka", "ke"],
-      "kunyomi": ["した", "さ", "くだ", "お", "しも", "もと"]
+        "id": 5,
+        "kanji": "下",
+        "english": "Below",
+        "romaji": [
+          "jyou",
+          "ue"
+        ],
+        "onyomi": [
+          "ka",
+          "ke"
+        ],
+        "kunyomi": [
+          "した",
+          "さ",
+          "くだ",
+          "お",
+          "しも",
+          "もと"
+        ]
       },
       {
         "id": 6,
-        "kanji":"九",
-        "english":"Nine",
-        "romaji":["ku", "kyuu"],
-        "onyomi": ["く", "きゅう"],
-        "kunyomi": ["ここの"]
+        "kanji": "九",
+        "english": "Nine",
+        "romaji": [
+          "ku",
+          "kyuu"
+        ],
+        "onyomi": [
+          "く",
+          "きゅう"
+        ],
+        "kunyomi": [
+          "ここの"
+        ]
       },
       {
         "id": 7,
-        "kanji":"二",
-        "english":"Two",
-        "romaji":["ni", "futa"],
-        "onyomi": ["に"],
-        "kunyomi": ["ふた"]
+        "kanji": "二",
+        "english": "Two",
+        "romaji": [
+          "ni",
+          "futa"
+        ],
+        "onyomi": [
+          "に"
+        ],
+        "kunyomi": [
+          "ふた"
+        ]
       },
       {
         "id": 8,
-        "kanji":"人",
-        "english":"Person",
-        "romaji":["nin", "jin","hito"],
-        "onyomi": ["にん", "じん"],
-        "kunyomi": ["ひと", "と"]
+        "kanji": "人",
+        "english": "Person",
+        "romaji": [
+          "nin",
+          "jin",
+          "hito"
+        ],
+        "onyomi": [
+          "にん",
+          "じん"
+        ],
+        "kunyomi": [
+          "ひと",
+          "と"
+        ]
       },
       {
         "id": 9,
-        "kanji":"入",
-        "english":"Enter",
-        "romaji":["nyuu"],
-        "onyomi": ["にゅう"],
-        "kunyomi": ["はい", "い"]
+        "kanji": "入",
+        "english": "Enter",
+        "romaji": [
+          "nyuu"
+        ],
+        "onyomi": [
+          "にゅう"
+        ],
+        "kunyomi": [
+          "はい",
+          "い"
+        ]
       },
       {
         "id": 10,
-        "kanji":"八",
-        "english":"Eight",
-        "romaji":["hachi"],
-        "onyomi": ["はち"],
-        "kunyomi": ["や", "よう"]
+        "kanji": "八",
+        "english": "Eight",
+        "romaji": [
+          "hachi"
+        ],
+        "onyomi": [
+          "はち"
+        ],
+        "kunyomi": [
+          "や",
+          "よう"
+        ]
       },
       {
         "id": 11,
-        "kanji":"十",
-        "english":"Ten",
-        "romaji":["jyuu"],
-        "onyomi": ["じゅう"],
-        "kunyomi": ["とお"]
+        "kanji": "十",
+        "english": "Ten",
+        "romaji": [
+          "jyuu"
+        ],
+        "onyomi": [
+          "じゅう"
+        ],
+        "kunyomi": [
+          "とお"
+        ]
       },
       {
         "id": 12,
-        "kanji":"大",
-        "english":"Big",
-        "romaji":["tai","dai"],
-        "onyomi": ["たい", "だい"],
-        "kunyomi": ["おお"]
+        "kanji": "大",
+        "english": "Big",
+        "romaji": [
+          "tai",
+          "dai"
+        ],
+        "onyomi": [
+          "たい",
+          "だい"
+        ],
+        "kunyomi": [
+          "おお"
+        ]
       },
       {
         "id": 13,
-        "kanji":"女",
-        "english":"Woman",
-        "romaji":["onna","jyo"],
-        "onyomi": ["じょ"],
-        "kunyomi": ["おんな", "め"]
+        "kanji": "女",
+        "english": "Woman",
+        "romaji": [
+          "onna",
+          "jyo"
+        ],
+        "onyomi": [
+          "じょ"
+        ],
+        "kunyomi": [
+          "おんな",
+          "め"
+        ]
       },
       {
         "id": 14,
-        "kanji":"山",
-        "english":"Mountain",
-        "romaji":["san","yama"],
-        "onyomi": ["さん"],
-        "kunyomi": ["やま"]
+        "kanji": "山",
+        "english": "Mountain",
+        "romaji": [
+          "san",
+          "yama"
+        ],
+        "onyomi": [
+          "さん"
+        ],
+        "kunyomi": [
+          "やま"
+        ]
       },
       {
         "id": 15,
-        "kanji":"川",
-        "english":"River",
-        "romaji":["sen","kawa"],
-        "onyomi": ["せん"],
-        "kunyomi": ["かわ"]
+        "kanji": "川",
+        "english": "River",
+        "romaji": [
+          "sen",
+          "kawa"
+        ],
+        "onyomi": [
+          "せん"
+        ],
+        "kunyomi": [
+          "かわ"
+        ]
       },
       {
         "id": 16,
-        "kanji":"中",
-        "english":"Middle",
-        "romaji":["chuu","naka"],
-        "onyomi": ["ちゅう"],
-        "kunyomi": ["なか"]
+        "kanji": "中",
+        "english": "Middle",
+        "romaji": [
+          "chuu",
+          "naka"
+        ],
+        "onyomi": [
+          "ちゅう"
+        ],
+        "kunyomi": [
+          "なか"
+        ]
       },
       {
         "id": 17,
-        "kanji":"五",
-        "english":"Five",
-        "romaji":["go"],
-        "onyomi": ["ご"],
-        "kunyomi": ["いつ"]
+        "kanji": "五",
+        "english": "Five",
+        "romaji": [
+          "go"
+        ],
+        "onyomi": [
+          "ご"
+        ],
+        "kunyomi": [
+          "いつ"
+        ]
       },
       {
         "id": 18,
-        "kanji":"川",
-        "english":"River",
-        "romaji":["sen","kawa"],
-        "onyomi": ["せん"],
-        "kunyomi": ["かわ"]
+        "kanji": "川",
+        "english": "River",
+        "romaji": [
+          "sen",
+          "kawa"
+        ],
+        "onyomi": [
+          "せん"
+        ],
+        "kunyomi": [
+          "かわ"
+        ]
       },
       {
         "id": 19,
-        "kanji":"六",
-        "english":"Six",
-        "romaji":["roku"],
-        "onyomi": ["ろく"],
-        "kunyomi": ["む"]
+        "kanji": "六",
+        "english": "Six",
+        "romaji": [
+          "roku"
+        ],
+        "onyomi": [
+          "ろく"
+        ],
+        "kunyomi": [
+          "む"
+        ]
       },
       {
         "id": 20,
-        "kanji":"円",
-        "english":"Yen",
-        "romaji":["en"],
-        "onyomi": ["えん"],
-        "kunyomi": ["まる"]
+        "kanji": "円",
+        "english": "Yen",
+        "romaji": [
+          "en"
+        ],
+        "onyomi": [
+          "えん"
+        ],
+        "kunyomi": [
+          "まる"
+        ]
       }
-      ],
-  "2":[
-    {
-      "id": 21,
-      "kanji":"出",
-      "english":"Exit",
-      "romaji":["shutsu"],
-      "onyomi": ["しゅつ"],
-      "kunyomi": ["で","だ"]
+    ],
+    "2": [
+      {
+        "id": 21,
+        "kanji": "出",
+        "english": "Exit",
+        "romaji": [
+          "shutsu"
+        ],
+        "onyomi": [
+          "しゅつ"
+        ],
+        "kunyomi": [
+          "で",
+          "だ"
+        ]
       },
       {
         "id": 22,
-        "kanji":"千",
-        "english":"Thousand",
-        "romaji":["sen"],
-        "onyomi": ["せん"],
-        "kunyomi": ["ち"]
+        "kanji": "千",
+        "english": "Thousand",
+        "romaji": [
+          "sen"
+        ],
+        "onyomi": [
+          "せん"
+        ],
+        "kunyomi": [
+          "ち"
+        ]
       },
       {
         "id": 23,
-        "kanji":"右",
-        "english":"Right",
-        "romaji":["yuu","migi"],
-        "onyomi": ["ゆう", "う"],
-        "kunyomi": ["みぎ"]
+        "kanji": "右",
+        "english": "Right",
+        "romaji": [
+          "yuu",
+          "migi"
+        ],
+        "onyomi": [
+          "ゆう",
+          "う"
+        ],
+        "kunyomi": [
+          "みぎ"
+        ]
       },
       {
         "id": 24,
-        "kanji":"土",
-        "english":"Dirt",
-        "romaji":["do","tsuchi"],
-        "onyomi": ["ど", "と"],
-        "kunyomi": ["つち"]
+        "kanji": "土",
+        "english": "Dirt",
+        "romaji": [
+          "do",
+          "tsuchi"
+        ],
+        "onyomi": [
+          "ど",
+          "と"
+        ],
+        "kunyomi": [
+          "つち"
+        ]
       },
       {
         "id": 25,
-        "kanji":"四",
-        "english":"Four",
-        "romaji":["shi","yon"],
-        "onyomi": ["し"],
-        "kunyomi": ["よん", "よ"]
+        "kanji": "四",
+        "english": "Four",
+        "romaji": [
+          "shi",
+          "yon"
+        ],
+        "onyomi": [
+          "し"
+        ],
+        "kunyomi": [
+          "よん",
+          "よ"
+        ]
       },
       {
         "id": 26,
-        "kanji":"天",
-        "english":"Heaven",
-        "romaji":"ten",
-        "onyomi": ["てん"],
-        "kunyomi": ["あま"]
+        "kanji": "天",
+        "english": "Heaven",
+        "romaji": "ten",
+        "onyomi": [
+          "てん"
+        ],
+        "kunyomi": [
+          "あま"
+        ]
       }
-     
     ]
-  }]
+  }
+]

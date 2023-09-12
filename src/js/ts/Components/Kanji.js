@@ -26,6 +26,7 @@ const Kanji = () => {
             event.target.parentElement.classList.add('wrong');
         }
     };
-    return GlobalItems?.gameCards.map((word, index) => (_jsx(_Fragment, { children: _jsxs("div", { className: " mb-3 w-[220px] h-[180px] rounded-xl flex flex-col bg-[#4361ee] p-4 text-center basis-[45%] sm:basis-[30%] lg:basis-[24%] xl:basis-[18%]", children: [_jsx("div", { className: " basis-[70%] mb-4 flex justify-center items-center bg-white dark:bg-[#1C1C21] dark:text-white rounded-md", children: _jsx("h1", { className: " w-full text-[1.5rem] font-bold", children: word.kanji }) }), _jsx("input", { className: " w-full  bg-[#d6d6d6] hover:bg-[#bdbdbd] dark:bg-[#4C4D52] dark:hover:bg-[#333438] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]", type: "text", onBlur: (e) => handleKeyPress(e, index) }, index)] }, index) })));
+    debugger;
+    return GlobalItems?.gameCards.map((word, index) => (_jsx(_Fragment, { children: _jsxs("div", { className: " mb-3 w-[220px] h-[180px] rounded-xl flex flex-col bg-[#4361ee] p-4 text-center basis-[45%] sm:basis-[30%] lg:basis-[24%] xl:basis-[18%]", children: [_jsx("div", { className: " basis-[70%] mb-4 flex justify-center items-center bg-white dark:bg-[#1C1C21] dark:text-white rounded-md", children: _jsx("h1", { className: " w-full text-[1.5rem] font-bold", children: word.kanji }) }), _jsx("input", { className: " w-full  bg-[#d6d6d6] hover:bg-[#bdbdbd] dark:bg-[#4C4D52] dark:hover:bg-[#333438] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]", type: "text", onBlur: (e) => handleKeyPress(e, index) }, index)] }, word.id) })));
 };
 export default Kanji;

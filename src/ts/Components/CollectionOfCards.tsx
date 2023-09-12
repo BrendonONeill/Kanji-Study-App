@@ -1,18 +1,17 @@
 
 import GlobalContext from "../GlobalContext";
-import { useContext } from "react";
-
-type KanjiCard = {
-    id: number,
-    kanji: string,
-    english: string,
-    romaji: string[],
-    onyomi: string[],
-    kunyomi: string[],
-}
+import { useContext, useEffect } from "react";
+import { KanjiCard } from "../Lib/types";
 
 function CollectionOfCards() {
     const GlobalItems = useContext(GlobalContext);
+
+    useEffect(() => {
+        if (GlobalItems) {
+            GlobalItems.setMaxNumber(0)
+        }
+    }, [])
+
     return (
         <div className=" bg-blue-300 dark:bg-[#7B2CBF] w-[100%] p-[1rem] flex rounded-[10px] gap-2 flex-col my-[5rem]">
             <div>

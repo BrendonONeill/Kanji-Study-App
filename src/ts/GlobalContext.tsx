@@ -2,6 +2,7 @@
 import { createContext, useState } from "react"
 import { KanjiCard } from "./Lib/types";
 
+
 type GameContext = {
   data: KanjiCard[];
   setData: React.Dispatch<React.SetStateAction<KanjiCard[]>>;
@@ -45,7 +46,7 @@ export function GlobalProvider({ children }: { children: React.ReactNode }) {
   const [grey, setGrey] = useState<KanjiCard[]>([]);
   const [red, setRed] = useState<KanjiCard[]>([]);
   const [theme, setTheme] = useState("light")
-  const [decks, setDecks] = useState<number[]>([1, 2])
+  const [decks, setDecks] = useState<number[]>([1, 2, 3, 4])
 
   return (
     <GlobalContext.Provider

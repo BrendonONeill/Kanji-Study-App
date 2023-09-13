@@ -24,11 +24,7 @@ function Pages() {
         GlobalItems.setTheme("light")
       }
     }, [])
-
   }
-
-
-
 
   return (
     <div className={GlobalItems?.theme}>

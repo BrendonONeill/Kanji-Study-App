@@ -276,21 +276,6 @@
       },
       {
         "id": 18,
-        "kanji": "川",
-        "english": "River",
-        "romaji": [
-          "sen",
-          "kawa"
-        ],
-        "onyomi": [
-          "せん"
-        ],
-        "kunyomi": [
-          "かわ"
-        ]
-      },
-      {
-        "id": 19,
         "kanji": "六",
         "english": "Six",
         "romaji": [
@@ -304,7 +289,7 @@
         ]
       },
       {
-        "id": 20,
+        "id": 19,
         "kanji": "円",
         "english": "Yen",
         "romaji": [
@@ -320,7 +305,7 @@
     ],
     "2": [
       {
-        "id": 21,
+        "id": 20,
         "kanji": "出",
         "english": "Exit",
         "romaji": [
@@ -335,7 +320,7 @@
         ]
       },
       {
-        "id": 22,
+        "id": 21,
         "kanji": "千",
         "english": "Thousand",
         "romaji": [
@@ -349,7 +334,7 @@
         ]
       },
       {
-        "id": 23,
+        "id": 22,
         "kanji": "右",
         "english": "Right",
         "romaji": [
@@ -365,7 +350,7 @@
         ]
       },
       {
-        "id": 24,
+        "id": 23,
         "kanji": "土",
         "english": "Dirt",
         "romaji": [
@@ -381,7 +366,7 @@
         ]
       },
       {
-        "id": 25,
+        "id": 24,
         "kanji": "四",
         "english": "Four",
         "romaji": [
@@ -397,7 +382,7 @@
         ]
       },
       {
-        "id": 26,
+        "id": 25,
         "kanji": "天",
         "english": "Heaven",
         "romaji": "ten",
@@ -406,6 +391,612 @@
         ],
         "kunyomi": [
           "あま"
+        ]
+      },
+      {
+        "id": 26,
+        "kanji": "子",
+        "english": "Child",
+        "romaji": [
+          "shi",
+          "su",
+          "ko"
+        ],
+        "onyomi": [
+          "し",
+          "す"
+        ],
+        "kunyomi": [
+          "ご"
+        ]
+      },
+      {
+        "id": 27,
+        "kanji": "小",
+        "english": "Small",
+        "romaji": [
+          "shou",
+          "chii",
+          "go",
+          "o"
+        ],
+        "onyomi": [
+          "しょう"
+        ],
+        "kunyomi": [
+          "ちい",
+          "こ",
+          "お"
+        ]
+      },
+      {
+        "id": 28,
+        "kanji": "左",
+        "english": "Left",
+        "romaji": [
+          "sa",
+          "hitari"
+        ],
+        "onyomi": [
+          "さ"
+        ],
+        "kunyomi": [
+          "ひだり"
+        ]
+      },
+      {
+        "id": 29,
+        "kanji": "日",
+        "english": "Sun",
+        "romaji": [
+          "nichi",
+          "jitsu",
+          "hi",
+          "ka",
+          "bi"
+        ],
+        "onyomi": [
+          "にち",
+          "じつ"
+        ],
+        "kunyomi": [
+          "ひ",
+          "か",
+          "び"
+        ]
+      },
+      {
+        "id": 30,
+        "kanji": "月",
+        "english": "Moon",
+        "romaji": [
+          "getsu",
+          "gatsu",
+          "tsuki"
+        ],
+        "onyomi": [
+          "げつ",
+          "がつ"
+        ],
+        "kunyomi": [
+          "つき"
+        ]
+      },
+      {
+        "id": 31,
+        "kanji": "木",
+        "english": "Tree",
+        "romaji": [
+          "moku",
+          "boku",
+          "ki",
+          "go"
+        ],
+        "onyomi": [
+          "もく",
+          "ぼく"
+        ],
+        "kunyomi": [
+          "き",
+          "こ"
+        ]
+      },
+      {
+        "id": 32,
+        "kanji": "本",
+        "english": "Book",
+        "romaji": [
+          "hon",
+          "moto",
+          ""
+        ],
+        "onyomi": [
+          "ほん"
+        ],
+        "kunyomi": [
+          "もと"
+        ]
+      },
+      {
+        "id": 33,
+        "kanji": "水",
+        "english": "Water",
+        "romaji": [
+          "sui",
+          "mizu"
+        ],
+        "onyomi": [
+          "すい"
+        ],
+        "kunyomi": [
+          "みず"
+        ]
+      },
+      {
+        "id": 34,
+        "kanji": "火",
+        "english": "Fire",
+        "romaji": [
+          "ka",
+          "hi",
+          "ho"
+        ],
+        "onyomi": [
+          "か"
+        ],
+        "kunyomi": [
+          "ひ",
+          "ほ"
+        ]
+      },
+      {
+        "id": 34,
+        "kanji": "白",
+        "english": "White",
+        "romaji": [
+          "haku",
+          "shiro",
+          "shira"
+        ],
+        "onyomi": [
+          "はく"
+        ],
+        "kunyomi": [
+          "しろ",
+          "しら"
+        ]
+      },
+      {
+        "id": 36,
+        "kanji": "万",
+        "english": "Ten Thousand",
+        "romaji": [
+          "man",
+          "ban"
+        ],
+        "onyomi": [
+          "まん",
+          "ばん"
+        ],
+        "kunyomi": [
+          ""
+        ]
+      },
+      {
+        "id": 37,
+        "kanji": "今",
+        "english": "Now",
+        "romaji": [
+          "con",
+          "ima"
+        ],
+        "onyomi": [
+          "こん"
+        ],
+        "kunyomi": [
+          "いま"
+        ]
+      },
+      {
+        "id": 38,
+        "kanji": "北",
+        "english": "North",
+        "romaji": [
+          "hoku",
+          "kita"
+        ],
+        "onyomi": [
+          "ほく"
+        ],
+        "kunyomi": [
+          "きた"
+        ]
+      },
+      {
+        "id": 39,
+        "kanji": "午",
+        "english": "Noon",
+        "romaji": [
+          "go"
+        ],
+        "onyomi": [
+          "ご"
+        ],
+        "kunyomi": [
+          ""
+        ]
+      }
+    ],
+    "3": [
+      {
+        "id": 40,
+        "kanji": "半",
+        "english": "Half",
+        "romaji": [
+          "han",
+          "naka"
+        ],
+        "onyomi": [
+          "はん"
+        ],
+        "kunyomi": [
+          "なか"
+        ]
+      },
+      {
+        "id": 41,
+        "kanji": "友",
+        "english": "Friend",
+        "romaji": [
+          "yuu",
+          "tomo"
+        ],
+        "onyomi": [
+          "ゆう"
+        ],
+        "kunyomi": [
+          "とも"
+        ]
+      },
+      {
+        "id": 42,
+        "kanji": "外",
+        "english": "Outside",
+        "romaji": [
+          "gai",
+          "soto",
+          "hazu"
+        ],
+        "onyomi": [
+          "がい"
+        ],
+        "kunyomi": [
+          "そと",
+          "はず"
+        ]
+      },
+      {
+        "id": 43,
+        "kanji": "母",
+        "english": "Mother",
+        "romaji": [
+          "ba",
+          "haha",
+          "kaa"
+        ],
+        "onyomi": [
+          "ぼ"
+        ],
+        "kunyomi": [
+          "はは",
+          "かあ"
+        ]
+      },
+      {
+        "id": 44,
+        "kanji": "父",
+        "english": "father",
+        "romaji": [
+          "fu",
+          "chichi",
+          "tou"
+        ],
+        "onyomi": [
+          "ふ"
+        ],
+        "kunyomi": [
+          "ちち",
+          "とう"
+        ]
+      },
+      {
+        "id": 45,
+        "kanji": "生",
+        "english": "Life",
+        "romaji": [
+          "sei",
+          "shou",
+          "i",
+          "nama",
+          "u",
+          "ha",
+          "ki"
+        ],
+        "onyomi": [
+          "せい",
+          "しょう"
+        ],
+        "kunyomi": [
+          "い",
+          "なま",
+          "う",
+          "は",
+          "き"
+        ]
+      },
+      {
+        "id": 46,
+        "kanji": "休",
+        "english": "Rest",
+        "romaji": [
+          "kyuu",
+          "yasu"
+        ],
+        "onyomi": [
+          "きゅう"
+        ],
+        "kunyomi": [
+          "やす"
+        ]
+      },
+      {
+        "id": 47,
+        "kanji": "先",
+        "english": "Previous",
+        "romaji": [
+          "sen",
+          "saki",
+          "ma"
+        ],
+        "onyomi": [
+          "せん"
+        ],
+        "kunyomi": [
+          "さき",
+          "ま"
+        ]
+      },
+      {
+        "id": 48,
+        "kanji": "名",
+        "english": "Name",
+        "romaji": [
+          "mei",
+          "myou",
+          "na"
+        ],
+        "onyomi": [
+          "めい",
+          "みょう"
+        ],
+        "kunyomi": [
+          "な"
+        ]
+      },
+      {
+        "id": 49,
+        "kanji": "年",
+        "english": "Year",
+        "romaji": [
+          "nen",
+          "toshi"
+        ],
+        "onyomi": [
+          "ねん"
+        ],
+        "kunyomi": [
+          "とし"
+        ]
+      },
+      {
+        "id": 50,
+        "kanji": "気",
+        "english": "Energy",
+        "romaji": [
+          "ki",
+          "ke"
+        ],
+        "onyomi": [
+          "き",
+          "け"
+        ],
+        "kunyomi": [
+          ""
+        ]
+      },
+      {
+        "id": 51,
+        "kanji": "男",
+        "english": "Man",
+        "romaji": [
+          "dan",
+          "nan",
+          "otoko"
+        ],
+        "onyomi": [
+          "だん",
+          "なん"
+        ],
+        "kunyomi": [
+          "おとこ"
+        ]
+      },
+      {
+        "id": 52,
+        "kanji": "百",
+        "english": "Hundred",
+        "romaji": [
+          "hyaku",
+          "momo"
+        ],
+        "onyomi": [
+          "ひゃく"
+        ],
+        "kunyomi": [
+          "もも"
+        ]
+      },
+      {
+        "id": 53,
+        "kanji": "見",
+        "english": "See",
+        "romaji": [
+          "ken",
+          "mi"
+        ],
+        "onyomi": [
+          "けん"
+        ],
+        "kunyomi": [
+          "み"
+        ]
+      },
+      {
+        "id": 54,
+        "kanji": "車",
+        "english": "Car",
+        "romaji": [
+          "sha",
+          "kuruma"
+        ],
+        "onyomi": [
+          "しゃ"
+        ],
+        "kunyomi": [
+          "くるま"
+        ]
+      },
+      {
+        "id": 55,
+        "kanji": "何",
+        "english": "What",
+        "romaji": [
+          "ka",
+          "nani",
+          "nan"
+        ],
+        "onyomi": [
+          "か"
+        ],
+        "kunyomi": [
+          "なに",
+          "なん"
+        ]
+      },
+      {
+        "id": 56,
+        "kanji": "学",
+        "english": "Study",
+        "romaji": [
+          "gaku",
+          "mana"
+        ],
+        "onyomi": [
+          "がく"
+        ],
+        "kunyomi": [
+          "まな"
+        ]
+      },
+      {
+        "id": 57,
+        "kanji": "来",
+        "english": "Come",
+        "romaji": [
+          "rai",
+          "ku",
+          "ki"
+        ],
+        "onyomi": [
+          "らい"
+        ],
+        "kunyomi": [
+          "く",
+          "き"
+        ]
+      },
+      {
+        "id": 58,
+        "kanji": "毎",
+        "english": "Every",
+        "romaji": [
+          "mai",
+          "goto"
+        ],
+        "onyomi": [
+          "まい"
+        ],
+        "kunyomi": [
+          "ごと"
+        ]
+      },
+      {
+        "id": 59,
+        "kanji": "行",
+        "english": "Go",
+        "romaji": [
+          "kou",
+          "gyou",
+          "i",
+          "okona",
+          "yu"
+        ],
+        "onyomi": [
+          "こう",
+          "ぎょう"
+        ],
+        "kunyomi": [
+          "い",
+          "おこな",
+          "ゆ"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "id": 60,
+        "kanji": "西",
+        "english": "West",
+        "romaji": [
+          "sei",
+          "sai",
+          "nishi"
+        ],
+        "onyomi": [
+          "せい",
+          "さい"
+        ],
+        "kunyomi": [
+          "にし"
+        ]
+      },
+      {
+        "id": 61,
+        "kanji": "金",
+        "english": "Gold",
+        "romaji": [
+          "kin",
+          "con",
+          "kene",
+          "kana"
+        ],
+        "onyomi": [
+          "きん",
+          "こん"
+        ],
+        "kunyomi": [
+          "かね",
+          "かな"
         ]
       }
     ]

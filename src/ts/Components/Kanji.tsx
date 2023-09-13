@@ -7,6 +7,9 @@ const Kanji = () => {
 
   const handleKeyPress = (event: any, index: number) => {
     let inputWord = event.target.value.trim();
+    if (inputWord === "") {
+      return;
+    }
     let test = inputWord.toLowerCase();
     if (GlobalItems?.gameCards[index].romaji.includes(test) || GlobalItems?.gameCards[index].onyomi.includes(test) || GlobalItems?.gameCards[index].kunyomi.includes(test)) {
       if (event.target.parentElement.classList.contains('wrong')) {
@@ -28,7 +31,8 @@ const Kanji = () => {
       event.target.parentElement.classList.add('wrong');
     }
   }
-  debugger
+
+
   return GlobalItems?.gameCards.map((word, index: number) => (
     <>
       <div

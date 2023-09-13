@@ -13,7 +13,7 @@ export function GlobalProvider({ children }) {
     const [grey, setGrey] = useState([]);
     const [red, setRed] = useState([]);
     const [theme, setTheme] = useState("light");
-    const [decks, setDecks] = useState([1, 2]);
+    const [decks, setDecks] = useState([1, 2, 3, 4]);
     return (_jsx(GlobalContext.Provider, { value: { data, setData, gameCards, setGameCards, score, setScore, cardsAmount, setCardsAmount, finished, setFinished, number, setNumber, maxNumber, setMaxNumber, green, setGreen, grey, setGrey, red, setRed, theme, setTheme, decks, setDecks }, children: children }));
 }
 export default GlobalContext;

@@ -26,8 +26,12 @@ function CollectionOfCards() {
                                         <p className="mx-auto my-[0.5rem] p-2 bg-[#0096C7] dark:bg-[#0BB744] dark:text-black text-white rounded-md text-center w-[80%]">{d.kanji}</p>
                                         <p>Meaning: {d.english} </p>
                                         <p>Rōmaji: {d.romaji[0]}</p>
-                                        <p>On’yomi: {d.onyomi[0]}</p>
-                                        <p>Kun’yomi: {d.kunyomi[0]}</p>
+                                        <p>On’yomi: {d.onyomi.map((x) => (
+                                            <p className=" inline-block mr-[0.8rem]">{x} </p>
+                                        ))}</p>
+                                        <p>Kun’yomi: {d.kunyomi.map((x) => (
+                                            <p className=" inline-block mr-[0.8rem]">{x} </p>
+                                        ))}</p>
                                     </div>
                                 ))
                             }

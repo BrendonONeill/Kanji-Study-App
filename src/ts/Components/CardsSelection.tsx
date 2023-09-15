@@ -49,7 +49,7 @@ function CardsSelection() {
         <div className=" p-[2rem] flex gap-[1rem] justify-center">
           {
             GlobalItems?.decks.map((x, index) => (
-              <button key={index} value={x} className="p-[1.5rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[10px] text-[#000] font-bold" onClick={(event) => addCardsToDeck(event)}>{x}</button>
+              <button key={index} value={x} className="p-[0.8rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[5px] h-[50px] w-[50px] text-[#000] font-bold" onClick={(event) => addCardsToDeck(event)}>{x}</button>
             ))
           }
         </div>
@@ -57,7 +57,7 @@ function CardsSelection() {
           <input className=" border-[4px] rounded-[10px] border-[#023E8A] dark:border-[#0BB744] mx-[5px] w-[200px] p-[0.5rem]" type="number" id="number" placeholder="1" min={1} onChange={(e) => GlobalItems?.setNumber(Number(e.target.value))} />
           <p className=" p-[1rem] dark:text-white">(Max {GlobalItems?.maxNumber})</p>
           {GlobalItems?.maxNumber !== 0 ?
-            <button type="submit" className=" p-[1rem] bg-[#FF7900] hover:bg-[#b35500] text-[#000] font-bold rounded-[10px] cursor-pointer ">Start Game</button> : null
+            <button type="submit" className=" p-[0.8rem] bg-[#FF7900] hover:bg-[#b35500] text-[#000] font-bold rounded-[5px] cursor-pointer ">Start Game</button> : null
           }
         </form>
       </div>

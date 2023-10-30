@@ -83,6 +83,3 @@ On this site I do most my kanji study and wanted a bit different way to study fr
 * Cleaning up UI
 * Making the site more accessible
 * Fixing Bugs
-
-## Known Bugs
-* Deck selecting clashing with dark mode sometimes

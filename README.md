@@ -78,8 +78,11 @@ On this site I do most my kanji study and wanted a bit different way to study fr
 * Adding more decks
 * Demo section
 * Hiragana and Katakana section
+* some common used words
 
 ## Working on
 * Cleaning up UI
 * Making the site more accessible
 * Fixing Bugs
+* Adding more Kanji
+* Adding section for hiragana & katakana

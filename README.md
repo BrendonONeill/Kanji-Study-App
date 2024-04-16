@@ -78,11 +78,14 @@ On this site I do most my kanji study and wanted a bit different way to study fr
 * Adding more decks
 * Demo section
 * Hiragana and Katakana section
-* some common used words
+* Adding some commonly used words
 
 ## Working on
-* Cleaning up UI
+* Cleaning up UI and maybe a bit of a re-design
 * Making the site more accessible
 * Fixing Bugs
+* Cleaning up core Typescript to be more readable 
 * Adding more Kanji
 * Adding section for hiragana & katakana
+
+

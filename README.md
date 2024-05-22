@@ -84,7 +84,8 @@ On this site I do most my kanji study and wanted a bit different way to study fr
 * Cleaning up UI and maybe a bit of a re-design
 * Making the site more accessible
 * Fixing Bugs
-* Cleaning up core Typescript to be more readable 
+* Cleaning up core Typescript to be more readable
+* Generating sentences that need to be translated  
 * Adding more Kanji
 * Adding section for hiragana & katakana
 

@@ -5,7 +5,6 @@ import { KanjiCard } from "../Lib/types";
 
 function CollectionOfCards() {
     const GlobalItems = useContext(GlobalContext);
-
     useEffect(() => {
         if (GlobalItems) {
             GlobalItems.setMaxNumber(0)

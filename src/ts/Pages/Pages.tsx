@@ -14,9 +14,9 @@ function Pages() {
   if (GlobalItems?.data.length === 0) {
 
     useEffect(() => {
-      fetch(`https://concerned-shirt-dog.cyclic.app/kanji/`)
+      fetch(`https://yko8kw06tyklhyhrgtrg.brendon-projects.blog/kanji`)
         .then(response => response.json())
-        .then(data => GlobalItems?.setData(data.record))
+        .then(data => { GlobalItems?.setData(data.record); console.log(data.record) })
         .catch(error => console.log(error));
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         GlobalItems.setTheme("dark")

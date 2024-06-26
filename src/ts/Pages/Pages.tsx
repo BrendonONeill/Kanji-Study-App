@@ -7,24 +7,21 @@ import GlobalContext from "../GlobalContext";
 import { useContext } from "react";
 import NotFound from "./NotFound";
 import CardsPage from "./CardsPage";
+import { useQuery } from "@tanstack/react-query";
+import { fetchKanji } from "../Lib/fetch";
+
 
 function Pages() {
   const GlobalItems = useContext(GlobalContext);
+  const { data: fetchedData } = useQuery({ queryKey: ['kanji'], queryFn: fetchKanji });
 
-  if (GlobalItems?.data.length === 0) {
+  useEffect(() => {
+    localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) ? GlobalItems?.setTheme("dark") : GlobalItems?.setTheme("light");
+  }, [])
 
-    useEffect(() => {
-      fetch(`https://yko8kw06tyklhyhrgtrg.brendon-projects.blog/kanji`)
-        .then(response => response.json())
-        .then(data => { GlobalItems?.setData(data.record); console.log(data.record) })
-        .catch(error => console.log(error));
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        GlobalItems.setTheme("dark")
-      } else {
-        GlobalItems.setTheme("light")
-      }
-    }, [])
-  }
+  useEffect(() => {
+    if (fetchedData) GlobalItems?.setData(fetchedData);
+  }, [fetchedData]);
 
   return (
     <div className={GlobalItems?.theme}>

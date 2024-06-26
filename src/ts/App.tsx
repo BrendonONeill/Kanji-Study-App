@@ -3,24 +3,27 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { GlobalProvider } from "./GlobalContext";
 import { ThemeProvider } from "./ThemeContext";
 import Pages from "./Pages/Pages";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 
 const App = () => {
+
+  const queryClient = new QueryClient()
   return (
     <>
-    <Router>
-      <GlobalProvider>
-      <ThemeProvider>
-      <Pages />
-      </ThemeProvider>
-      </GlobalProvider>
-    </Router>
+      <QueryClientProvider client={queryClient}>
+        <Router>
+          <GlobalProvider>
+            <ThemeProvider>
+              <Pages />
+            </ThemeProvider>
+          </GlobalProvider>
+        </Router>
+      </QueryClientProvider>
     </>
   );
 };
-const container : HTMLElement | null = document.getElementById("root");
-console.log(container)
-if(container !== null)
-{
+const container: HTMLElement | null = document.getElementById("root");
+if (container !== null) {
   const root = createRoot(container);
   root.render(<App />);
 }

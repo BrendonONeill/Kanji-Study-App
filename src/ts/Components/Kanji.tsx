@@ -5,7 +5,13 @@ import { useContext } from "react";
 const Kanji = () => {
   const GlobalItems = useContext(GlobalContext);
 
-  const handleKeyPress = (event: any, index: number) => {
+  const handleKeyPressed = (e, index) => {
+    if (e.key === "Enter") {
+      handleCheckAnswer(e, index)
+    }
+  }
+
+  const handleCheckAnswer = (event: any, index: number) => {
     let inputWord = event.target.value.trim();
     if (inputWord === "") {
       return;
@@ -15,7 +21,10 @@ const Kanji = () => {
       if (event.target.parentElement.classList.contains('wrong')) {
         GlobalItems?.setScore((prev: number) => prev + 1)
         event.target.parentElement.style.backgroundColor = "#495057"
-        GlobalItems?.setGrey(prev => [...prev, ...[GlobalItems.gameCards[index]]])
+        let copy = GlobalItems?.grey.find((obj) => obj.id === GlobalItems.gameCards[index].id)
+        if (copy === undefined) {
+          GlobalItems?.setGrey(prev => [...prev, ...[GlobalItems.gameCards[index]]])
+        }
       }
       else {
         GlobalItems?.setScore((prev: number) => prev + 2)
@@ -41,7 +50,7 @@ const Kanji = () => {
         <div className=" basis-[70%] mb-4 flex justify-center items-center bg-white dark:bg-[#1C1C21] dark:text-white rounded-md">
           <h1 className=" w-full text-[1.5rem] font-bold">{word.kanji}</h1>
         </div>
-        <input className=" w-full  bg-[#d6d6d6] hover:bg-[#bdbdbd] dark:bg-[#4C4D52] dark:hover:bg-[#333438] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]" type="text" key={index} onBlur={(e) => handleKeyPress(e, index)} />
+        <input className=" w-full  bg-[#d6d6d6] hover:bg-[#bdbdbd] dark:bg-[#4C4D52] dark:hover:bg-[#333438] dark:text-white rounded-md text-center font-bold text-[1.4rem] basis-[30%]" type="text" key={index} onBlur={(e) => handleCheckAnswer(e, index)} onKeyDown={(e) => handleKeyPressed(e, index)} />
       </div>
     </>
   ));

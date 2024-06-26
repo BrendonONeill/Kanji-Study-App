@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import GlobalContext from "../GlobalContext";
 import { useContext } from "react";
-import { checkCardAmount, collectingCardsForGame, randomCardSelection } from "../Lib/startGame"
-import { KanjiCard } from "../Lib/types"
+import { updateDeck, randomizeCards } from "../Lib/startGame"
+import Loading from "./Loading";
 
 function CardsSelection() {
   const navigate = useNavigate();
@@ -16,33 +16,15 @@ function CardsSelection() {
     }
   }, [GlobalItems?.gameCards])
 
-
-
   const random = (e: React.ChangeEvent<HTMLInputElement> | React.FormEvent, pickedNumbers: number[]) => {
     e.preventDefault();
-    if (GlobalItems !== null) {
-      let cardsNumber = checkCardAmount(GlobalItems.number, GlobalItems.maxNumber)
-      let collectionOfCards: KanjiCard[] = collectingCardsForGame(GlobalItems.data, pickedNumbers)
-      collectionOfCards = collectionOfCards.flat(Infinity);
-      GlobalItems.setCardsAmount(cardsNumber * 2)
-      let sortedCards: KanjiCard[] = randomCardSelection(collectionOfCards, cardsNumber)
-      GlobalItems?.setGameCards([...sortedCards]);
-    }
+    randomizeCards(GlobalItems, pickedNumbers)
   }
 
   const addCardsToDeck = (e) => {
-    let eventValue: number = e.target.value;
-    if (e.target.classList.contains(`button-clicked-${GlobalItems?.theme}`)) {
-      e.target.classList.remove(`button-clicked-${GlobalItems?.theme}`)
-      setPickedNumbers(prev => (prev.filter(p => p !== Number(e.target.value))))
-      GlobalItems?.setMaxNumber(prev => prev - GlobalItems.data[0][eventValue].length)
-    }
-    else {
-      e.target.classList.add(`button-clicked-${GlobalItems?.theme}`);
-      setPickedNumbers(prev => [...prev, Number(e.target.value)])
-      GlobalItems?.setMaxNumber(prev => prev + GlobalItems.data[0][eventValue].length)
-    }
+    updateDeck(e, GlobalItems, setPickedNumbers)
   }
+
   if (GlobalItems?.data !== null) {
     return (
       <div className=" pb-[5rem]">
@@ -65,7 +47,7 @@ function CardsSelection() {
   }
   else {
     return (
-      <h1>Loading</h1>
+      <Loading />
     )
   }
 }

@@ -8,13 +8,13 @@ export function updateDeck(e, items, picked) {
     if (e.target.classList.contains(`button-clicked-${items?.theme}`)) {
         e.target.classList.remove(`button-clicked-${items?.theme}`)
         picked(prev => (prev.filter(p => p !== Number(e.target.value))))
-        items?.setMaxNumber(prev => prev - items.data[0][eventValue].length)
+        items?.setMaxNumber(prev => prev - items.data.kanji.eventValue.length)
 
     }
     else {
         e.target.classList.add(`button-clicked-${items?.theme}`);
         picked(prev => [...prev, Number(e.target.value)])
-        items?.setMaxNumber(prev => prev + items.data[0][eventValue].length)
+        items?.setMaxNumber(prev => prev + items.data.kanji.eventValue.length)
     }
 }
 

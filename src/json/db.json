@@ -1,5 +1,5 @@
-[
-    {
+{
+    "kanji": {
         "1": [
             {
                 "id": 1,
@@ -550,7 +550,7 @@
                 ]
             },
             {
-                "id": 34,
+                "id": 35,
                 "kanji": "白",
                 "english": "White",
                 "romaji": [
@@ -1000,5 +1000,99 @@
                 ]
             }
         ]
+    },
+    "katakana": {
+        "ア": [
+            {
+                "id": 1,
+                "katakana": "ア",
+                "english": "a"
+            }
+        ],
+        "カ": [
+            {
+                "id": 1,
+                "katakana": "カ",
+                "english": "ka"
+            }
+        ],
+        "サ": [
+            {
+                "id": 1,
+                "katakana": "サ",
+                "english": "sa"
+            }
+        ],
+        "タ": [
+            {
+                "id": 1,
+                "katakana": "タ",
+                "english": "ta"
+            }
+        ],
+        "ナ": [
+            {
+                "id": 1,
+                "katakana": "ナ",
+                "english": "na"
+            }
+        ]
+    },
+    "hiragana": {
+        "あ": [
+            {
+                "id": 1,
+                "hiragana": "あ",
+                "english": "a"
+            },
+            {
+                "id": 2,
+                "hiragana": "え",
+                "english": "e"
+            },
+            {
+                "id": 3,
+                "hiragana": "い",
+                "english": "i"
+            },
+            {
+                "id": 4,
+                "hiragana": "お",
+                "english": "o"
+            },
+            {
+                "id": 5,
+                "hiragana": "う",
+                "english": "u"
+            }
+        ],
+        "か": [
+            {
+                "id": 6,
+                "hiragana": "か",
+                "english": "a"
+            }
+        ],
+        "さ": [
+            {
+                "id": 7,
+                "hiragana": "さ",
+                "english": "a"
+            }
+        ],
+        "た": [
+            {
+                "id": 8,
+                "hiragana": "た",
+                "english": "a"
+            }
+        ],
+        "な": [
+            {
+                "id": 9,
+                "hiragana": "な",
+                "english": "a"
+            }
+        ]
     }
-]
+}

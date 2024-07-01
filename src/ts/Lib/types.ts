@@ -9,6 +9,15 @@ export type KanjiCard = {
 
 export type Data =
     {
+        kanji: Kanji,
+        katakana: Katakana,
+        hiragana: Hiragana,
+
+    } | null
+
+
+export type Kanji =
+    {
         1: KanjiCard[],
         2: KanjiCard[],
         3: KanjiCard[],
@@ -16,10 +25,22 @@ export type Data =
 
     }
 
+export type Hiragana =
+    {
+        id: number,
+        hiragana: string,
+        english: string,
+    }
+
+export type Katakana = {
+    id: number,
+    katakana: string,
+    english: string,
+}
 
 export type GameContext = {
-    data: KanjiCard[] | null;
-    setData: React.Dispatch<React.SetStateAction<KanjiCard[]>>
+    data: Data | null;
+    setData: React.Dispatch<React.SetStateAction<Data>>
     gameCards: KanjiCard[];
     setGameCards: React.Dispatch<React.SetStateAction<KanjiCard[]>>
     score: number
@@ -42,4 +63,10 @@ export type GameContext = {
     setTheme: React.Dispatch<React.SetStateAction<string>>
     decks: number[];
     setDecks: React.Dispatch<React.SetStateAction<number[]>>
+    typeOfDeck: string,
+    setTypeOfDeck: React.Dispatch<React.SetStateAction<string>>
+    hiraganaLetter: string[];
+    setHiraganaLetter: React.Dispatch<React.SetStateAction<string[]>>
+    katakanaLetter: string[];
+    setKatakanaLetter: React.Dispatch<React.SetStateAction<string[]>>
 }

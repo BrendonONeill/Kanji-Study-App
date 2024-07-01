@@ -42,6 +42,7 @@ function CardsSelection() {
             <button type="submit" className=" p-[0.8rem] bg-[#FF7900] hover:bg-[#b35500] text-[#000] font-bold rounded-[5px] cursor-pointer ">Start Game</button> : null
           }
         </form>
+        {console.log(GlobalItems?.data[GlobalItems.typeOfDeck]["あ"])}
       </div>
     )
   }

@@ -42,9 +42,15 @@ function Results() {
         }
         <button aria-label="reset the game" className=' p-[1rem] bg-[#FF7900] hover:bg-[#b35500] rounded-[10px] mb-[5rem] text-black font-bold cursor-pointer max-w-[40%] mx-auto mt-2' onClick={reset} >Home</button>
 
+
+
         {GlobalItems?.green.length !== 0 ? <ResultCards card={GlobalItems?.green} text={"Correct"} /> : null}
         {GlobalItems?.grey.length !== 0 ? <ResultCards card={GlobalItems?.grey} text={"Look Over"} /> : null}
         {GlobalItems?.red.length !== 0 ? <ResultCards card={GlobalItems?.red} text={"Study Again"} /> : null}
+
+
+
+
       </div>
       <Footer />
     </>

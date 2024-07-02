@@ -17,7 +17,7 @@ export function GlobalProvider({ children }: { children: React.ReactNode }) {
   const [red, setRed] = useState<KanjiCard[]>([]);
   const [theme, setTheme] = useState("light")
   const [decks, setDecks] = useState<number[]>([1, 2, 3, 4])
-  const [typeOfDeck, setTypeOfDeck] = useState("")
+  const [typeOfDeck, setTypeOfDeck] = useState("kanji")
   const [hiraganaLetter, setHiraganaLetter] = useState(["あ", "か", "さ", "た", "な"])
   const [katakanaLetter, setKatakanaLetter] = useState(["ア", "カ", "サ", "タ", "ナ"])
 

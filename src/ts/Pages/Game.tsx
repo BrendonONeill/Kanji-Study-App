@@ -26,8 +26,10 @@ function Game() {
     }
   }, [])
 
+
+
   const calculatedScore = () => {
-    const tempRed: KanjiCard[] = []
+    const tempRed: KanjiCard[] | any = []
     GlobalItems?.gameCards.forEach((card) => {
       const test1 = GlobalItems?.green.find((compareCard) => compareCard.id === card.id);
       const test2 = GlobalItems?.grey.find((compareCard) => compareCard.id === card.id);
@@ -37,10 +39,14 @@ function Game() {
     })
     GlobalItems?.setRed(prev => [...prev, ...tempRed])
     GlobalItems?.setScore(Math.round((GlobalItems.score / GlobalItems.cardsAmount) * 100))
-    console.log(GlobalItems?.score)
     GlobalItems?.setFinished(true);
     navigate(`/results`);
   }
+
+
+
+
+
 
   return (
     <>

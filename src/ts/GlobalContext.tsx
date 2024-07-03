@@ -1,11 +1,11 @@
 
 import { createContext, useState } from "react"
-import { GameContext, KanjiCard } from "./Lib/types";
+import { GameContext, KanjiCard, Data } from "./Lib/types";
 
 const GlobalContext = createContext<null | GameContext>(null)
 
 export function GlobalProvider({ children }: { children: React.ReactNode }) {
-  const [data, setData] = useState<KanjiCard[]>([]);
+  const [data, setData] = useState<Data>(null);
   const [gameCards, setGameCards] = useState<KanjiCard[]>([]);
   const [score, setScore] = useState(0);
   const [cardsAmount, setCardsAmount] = useState(0);
@@ -17,13 +17,16 @@ export function GlobalProvider({ children }: { children: React.ReactNode }) {
   const [red, setRed] = useState<KanjiCard[]>([]);
   const [theme, setTheme] = useState("light")
   const [decks, setDecks] = useState<number[]>([1, 2, 3, 4])
+  const [typeOfDeck, setTypeOfDeck] = useState("kanji")
+  const [hiraganaLetter, setHiraganaLetter] = useState(["あ", "か", "さ", "た", "な", "ま", "や", "ら", "わ", "が", "ざ", "だ", "ば", "ぱ", "-や", "-ゆ", "-よ"])
+  const [katakanaLetter, setKatakanaLetter] = useState(["ア", "カ", "サ", "タ", "ハ", "マ", "ヤ", "ラ", "ワ", "ガ", "ザ", "ダ", "バ", "パ", "-ヤ", "-ユ", "-ヨ"])
 
 
 
 
   return (
     <GlobalContext.Provider
-      value={{ data, setData, gameCards, setGameCards, score, setScore, cardsAmount, setCardsAmount, finished, setFinished, number, setNumber, maxNumber, setMaxNumber, green, setGreen, grey, setGrey, red, setRed, theme, setTheme, decks, setDecks }}>
+      value={{ data, setData, gameCards, setGameCards, score, setScore, cardsAmount, setCardsAmount, finished, setFinished, number, setNumber, maxNumber, setMaxNumber, green, setGreen, grey, setGrey, red, setRed, theme, setTheme, decks, setDecks, typeOfDeck, setTypeOfDeck, hiraganaLetter, setHiraganaLetter, katakanaLetter, setKatakanaLetter }}>
       {children}
     </GlobalContext.Provider>
   );

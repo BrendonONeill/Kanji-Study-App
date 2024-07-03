@@ -18,8 +18,8 @@ export function GlobalProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState("light")
   const [decks, setDecks] = useState<number[]>([1, 2, 3, 4])
   const [typeOfDeck, setTypeOfDeck] = useState("kanji")
-  const [hiraganaLetter, setHiraganaLetter] = useState(["あ", "か", "さ", "た", "な"])
-  const [katakanaLetter, setKatakanaLetter] = useState(["ア", "カ", "サ", "タ", "ナ"])
+  const [hiraganaLetter, setHiraganaLetter] = useState(["あ", "か", "さ", "た", "な", "ま", "や", "ら", "わ", "が", "ざ", "だ", "ば", "ぱ", "-や", "-ゆ", "-よ"])
+  const [katakanaLetter, setKatakanaLetter] = useState(["ア", "カ", "サ", "タ", "ハ", "マ", "ヤ", "ラ", "ワ", "ガ", "ザ", "ダ", "バ", "パ", "-ヤ", "-ユ", "-ヨ"])
 
 
 

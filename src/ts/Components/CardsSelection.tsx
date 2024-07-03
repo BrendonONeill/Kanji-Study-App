@@ -33,7 +33,7 @@ function CardsSelection() {
         {
           GlobalItems?.typeOfDeck === "" || GlobalItems?.typeOfDeck === "kanji" ?
 
-            <div className=" pb-[5rem]">
+            <div className=" pb-[5rem] mt-[4rem]">
               <div className=" p-[2rem] flex gap-[1rem] justify-center">
                 {
                   GlobalItems?.decks.map((x, index) => (
@@ -52,7 +52,7 @@ function CardsSelection() {
             GlobalItems?.typeOfDeck === "hiragana" ?
 
               <div className=" pb-[5rem]">
-                <div className=" p-[2rem] flex gap-[1rem] justify-center">
+                <div className=" p-[1rem] flex gap-[1rem] justify-center flex-wrap lg:w-[50%] lg:mx-auto ">
                   {
                     GlobalItems?.hiraganaLetter.map((x, index) => (
                       <button key={index} value={x} className="p-[0.8rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[5px] h-[50px] w-[50px] text-[#000] font-bold" onClick={(event) => addCardsToDeck(event)}>{x}</button>
@@ -71,7 +71,7 @@ function CardsSelection() {
               GlobalItems?.typeOfDeck === "katakana" ?
 
                 <div className=" pb-[5rem]">
-                  <div className=" p-[2rem] flex gap-[1rem] justify-center">
+                  <div className=" p-[2rem] flex gap-[1rem] justify-center flex-wrap lg:w-[52%] lg:mx-auto ">
                     {
                       GlobalItems?.katakanaLetter.map((x, index) => (
                         <button key={index} value={x} className="p-[0.8rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[5px] h-[50px] w-[50px] text-[#000] font-bold" onClick={(event) => addCardsToDeck(event)}>{x}</button>

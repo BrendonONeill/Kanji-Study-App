@@ -40,7 +40,7 @@ function Results() {
             </div>
           </> : null
         }
-        <button aria-label="reset the game" className=' p-[1rem] bg-[#FF7900] hover:bg-[#b35500] rounded-[10px] mb-[5rem] text-black font-bold cursor-pointer max-w-[40%] mx-auto mt-2' onClick={reset} >Home</button>
+        <button aria-label="reset the game" className=' p-[1rem] bg-[#FF7900] hover:bg-[#b35500] rounded-[5px] mb-[5rem] text-black font-bold cursor-pointer max-w-[40%] mx-auto mt-2' onClick={reset} >Home</button>
 
 
 

@@ -22,7 +22,7 @@ function Pages() {
 
   useEffect(() => {
     if (fetchedData) GlobalItems?.setData(fetchedData);
-    console.log(fetchedData)
+    console.log("fetched")
   }, [fetchedData]);
 
   return (
@@ -30,7 +30,7 @@ function Pages() {
       <section className="w-full bg-[#CAF0F8] dark:bg-[#1C1C21]">
         <Routes>
           <Route path="/" element={<Intro />} />
-          <Route path="/selection" element={<Main />} />
+          <Route path="/main" element={<Main />} />
           <Route path="/aaa" element={<Main />} />
           <Route path="/game" element={<Game />} />
           <Route path="/results" element={<Results />} />

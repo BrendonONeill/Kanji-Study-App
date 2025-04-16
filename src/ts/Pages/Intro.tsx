@@ -22,9 +22,9 @@ function Intro() {
 
                 </div>
                 <div className=" grid w-[90%] lg:w-[45%] m-auto mt-[3rem] gap-[1rem]">
-                    <button className=" rounded-[5px] p-4 hover:bg-[#b35500] bg-[#FF7900] text=[#000] col-span-2 h-[100px] font-bold text-[2rem]" onClick={() => test("kanji")}>Kanji</button>
-                    <button className=" rounded-[5px] p-4 bg-[#023E8A] text-[white] h-[80px] font-bold" onClick={() => test("hiragana")}>Hiragana</button>
-                    <button className=" rounded-[5px]  p-4 bg-[#023E8A] text-[white] h-[80px] font-bold" onClick={() => test("katakana")}>Katakana</button>
+                    <button className=" rounded-[5px] p-4 hover:bg-[#b35500] bg-[#FF7900] dark:bg-[#0BB744] dark:hover:bg-[hsl(140,89%,20%)]  text=[#000] col-span-2 h-[100px] font-bold text-[2rem]" onClick={() => test("kanji")}>Kanji</button>
+                    <button className=" rounded-[5px] p-4 hover:bg-[#b35500] bg-[#FF7900] dark:bg-[#0BB744] dark:hover:bg-[hsl(140,89%,20%)]  text-[black] h-[80px] font-bold" onClick={() => test("hiragana")}>Hiragana</button>
+                    <button className=" rounded-[5px]  p-4 hover:bg-[#b35500] bg-[#FF7900] dark:bg-[#0BB744] dark:hover:bg-[hsl(140,89%,20%)]  text-[black] h-[80px] font-bold" onClick={() => test("katakana")}>Katakana</button>
                 </div>
             </div>
             <Footer />

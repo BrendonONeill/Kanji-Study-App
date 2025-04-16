@@ -8,7 +8,7 @@ import { useContext } from "react";
 import NotFound from "./NotFound";
 import CardsPage from "./CardsPage";
 import { useQuery } from "@tanstack/react-query";
-import { fetchKanji } from "../Lib/fetch";
+import { fetchKanji} from "../Lib/fetch";
 import Intro from "./Intro";
 
 
@@ -21,8 +21,10 @@ function Pages() {
   }, [])
 
   useEffect(() => {
+   
     if (fetchedData) GlobalItems?.setData(fetchedData);
     console.log("fetched")
+    console.log(fetchedData)
   }, [fetchedData]);
 
   return (

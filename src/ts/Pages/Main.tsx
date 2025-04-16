@@ -14,8 +14,8 @@ function Main() {
         <Header />
         <InfoCard />
         <div className=" p-[2rem] ">
-          <button className="p-[0.8rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[5px] text-[#000] font-bold" onClick={() => navigate(`/`)}>Back</button>
-          <button aria-label="preview decks" className=" p-[0.8rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[5px] text-[#000] font-bold mx-[1rem]" onClick={() => navigate(`/cards`)}>Preview Decks</button>
+          <button className="p-[0.8rem] hover:bg-[#b35500] bg-[#FF7900] dark:bg-[#0BB744] dark:hover:bg-[hsl(140,89%,20%)]  rounded-[5px] text-[#000] font-bold" onClick={() => navigate(`/`)}>Back</button>
+          <button aria-label="preview decks" className=" p-[0.8rem] hover:bg-[#b35500] bg-[#FF7900] dark:bg-[#0BB744] dark:hover:bg-[hsl(140,89%,20%)]  rounded-[5px] text-[#000] font-bold mx-[1rem]" onClick={() => navigate(`/cards`)}>Preview Decks</button>
         </div>
         <CardsSelection />
       </div>

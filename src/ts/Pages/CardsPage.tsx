@@ -16,7 +16,7 @@ function CardsPage() {
       <div className=" min-h-[95vh] w-[375px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] m-auto bg-[#FFF5EE] dark:bg-[#2F3037]  flex flex-col">
         <Header />
         <div className="p-[2rem] pb-0">
-          <button aria-label="return to main page" className="p-[1rem] hover:bg-[#b35500] bg-[#FF7900] rounded-[5px] text-[#000] font-bold" onClick={() => navigate(`/main`)}>Home Page</button>
+          <button aria-label="return to main page" className="p-[1rem] hover:bg-[#b35500] bg-[#FF7900] dark:bg-[#0BB744] dark:hover:bg-[hsl(140,89%,20%)]  rounded-[5px] text-[#000] font-bold" onClick={() => navigate(`/main`)}>Home Page</button>
         </div>
         {GlobalItems?.data !== null ?
           <>

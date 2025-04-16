@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className='p-[1rem] bg-[#0096C7] dark:bg-[#7B2CBF] text-[#fff] w-[375px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1280px] m-auto rounded-t-md flex'>
       <div className="basis-[50%] sm:basis-[90%] md:basis-[90%] flex items-center">
-        <p className='font-bold text-[1rem] pb-4'>Brendon O'Neill © 2024</p>
+        <p className='font-bold text-[1rem] pb-4'>Brendon O'Neill © 2025</p>
       </div>
       <div className='p-[0.2rem] basis-[50%] sm:basis-[20%] md:basis-[10%] h-full'>
         <ul className='flex list-none'>
